@@ -31,7 +31,6 @@ public class StringBufferBuilder{
     @Test
     public void test2(){
 
-
         StringBuffer s1 =new StringBuffer("abc");
 
         s1.append(1);//在结尾加个int类型的1
