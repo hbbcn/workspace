@@ -1,6 +1,4 @@
-package Proxy;
-
-import java.util.concurrent.SubmissionPublisher;
+package com.atguigu.Proxy;
 
 /**
  *@ClassName StaticProxyTest
