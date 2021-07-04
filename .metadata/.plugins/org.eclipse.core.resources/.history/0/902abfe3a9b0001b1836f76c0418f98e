@@ -1,0 +1,13 @@
+/**
+ * @Title:Customer.java
+ * @Package:com.atguigu.equals
+ * @Description:TODO(一句话描述该文件做了什么) 
+ * @author:30988  
+ * @time:2021年5月9日下午4:49:12
+ * 
+ */
+package com.atguigu.equals;
+
+public class Customer {
+
+}

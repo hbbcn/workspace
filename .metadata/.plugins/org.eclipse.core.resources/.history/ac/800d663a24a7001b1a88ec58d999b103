@@ -1,0 +1,56 @@
+package com.sias.exer3;
+//函数的递归
+public class RecursionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RecursionTest test = new RecursionTest();
+		System.out.println(test.getSum(100));
+		System.out.println(test.getMul(10));
+		System.out.println(test.f(10));
+		System.out.println(test.getSum1(3));
+	}
+//例1	计算1到100的和
+	public int getSum(int n) {
+		if(n==1)
+			return 1;
+		else 
+			return n + getSum(n-1);
+	}
+//例2	计算1到100的乘积
+	public int getMul(int n) {
+		if(n == 1)
+			return 1;
+		else
+			return n * getMul(n-1);
+	}
+//	已知有一个数列，f(0) = 1, f(1) = 4; f(n+2）= 2*f(n+1) + f(n)
+//	其中n是大于0的整数，求f(10)的值
+	public int f(int n) {
+	 
+		if(n == 0)
+			return 1;
+		else if(n == 1) 
+			return 4;
+		else  
+			return 2*f(n - 1)  + f(n - 2);
+		
+		
+		
+	}
+//	例3 斐波那契数列
+	public int getSum1(int n) {
+		if(n == 1)
+			return 1;
+		else if(n == 2)
+			return 1;
+		else 
+			return getSum1(n-1) + getSum(n-2);
+		
+	}
+//	例4 汉诺塔问题
+	
+	
+//	例5 快速排序
+	
+}

@@ -1,0 +1,16 @@
+package com.sias.exer3;
+//函数的递归 计算1-100的和
+public class RecursionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RecursionTest test = new RecursionTest();
+		System.out.println(test.getSum(100));
+	}
+	public int getSum(int n) {
+		if(n==1)
+			return 1;
+		else 
+			return n + getSum(n-1);
+	}
+}

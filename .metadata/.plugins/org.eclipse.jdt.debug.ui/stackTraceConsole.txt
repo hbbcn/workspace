@@ -1,0 +1,2 @@
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at contacks/com.atguigu.array.ArrayDmeo1.main(ArrayDmeo1.java:22

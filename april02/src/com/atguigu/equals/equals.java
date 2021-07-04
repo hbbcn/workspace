@@ -1,0 +1,74 @@
+/**
+ * @Title:equals.java
+ * @Package:com.atguigu.equals
+ * @Description:TODO(一句话描述该文件做了什么) 
+ * @author:30988  
+ * @time:2021年5月9日下午4:30:40
+ * 
+ */
+package com.atguigu.equals;
+/*
+ * 一、 equals()方法的使用
+ * 1.是一个方法而非运算符
+ * 2.只能适用于引用数据类型
+ * 3.Object类equals()类中的定义
+ * 		public boolean equals(Object obj){
+ * 				return(this == obj);
+ * }
+ * 说明：Object 类中定义equals()和==的作用是相同的。比较的是两个对象的地址值是否相同，而非内容
+ * 
+ * 
+ * 4.像String, Date, File ,包装类等都重写了Object类的equals（）方法 比较的不是两个对象的地址值是否相同，而是内容
+ * 
+ * 5.通常情况下，我们自定义的类 也通常比较的是两个对象的“实体内容”是否相同，那么我们就需要重写
+ * 
+ * 
+ * 
+ * 
+ */
+public class equals {
+
+	public static void main(String[] args) {
+		
+		
+		//基本数据类型
+		int i = 10;
+		int j = 10;
+		double d = 10.0;
+		System.out.println(i == j);//true
+		System.out.println(i == d);//ture
+		
+		
+		boolean b = true;
+		
+		
+		char c = 10;
+		System.out.println(i == c);//true
+		
+		char c1 = 'A';
+		char c2 =  65;
+		System.out.println( c1 == c2);//true
+		
+		//引用数据类型
+		Customer  cust1 = new Customer("Tom", 21);
+		Customer  cust2 = new Customer("Tom", 21);
+		
+		System.out.println(cust1 ==cust2);//false
+		
+//		String str1  = new String("atguigu");
+//		String str2  = new String("atguigu");
+		
+//		System.out.println(str1 == str2);//false
+//		
+		System.out.println("***********");
+		System.out.println(cust1.equals(cust2));//false
+//		System.out.println(str1.equals(str2));//true
+//		
+		Customer test = new Customer();
+		
+		System.out.println("**************");
+		System.out.println(test.Test());
+		
+	}
+	
+}

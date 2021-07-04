@@ -1,0 +1,25 @@
+package com.sias.exer3;
+//函数的递归
+public class RecursionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RecursionTest test = new RecursionTest();
+		System.out.println(test.getSum(100));
+		System.out.println(test.getMul(100));
+	}
+//	计算1到100的和
+	public int getSum(int n) {
+		if(n==1)
+			return 1;
+		else 
+			return n + getSum(n-1);
+	}
+//	计算1到100的乘积
+	public int getMul(int n) {
+		if(n == 1)
+			return 1;
+		else
+			return n * getMul(n-1);
+	}
+}
