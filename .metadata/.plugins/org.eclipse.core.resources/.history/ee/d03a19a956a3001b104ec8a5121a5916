@@ -1,0 +1,16 @@
+package com.sias.exer;
+
+public class Exer4Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student[] stus = new Student[20];
+	}
+
+}
+
+class Student{
+	int number;//学号
+	int state;//年级
+	int score;//成绩
+}

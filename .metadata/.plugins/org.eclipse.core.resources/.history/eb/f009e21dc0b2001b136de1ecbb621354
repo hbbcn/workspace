@@ -1,0 +1,48 @@
+/**
+ * @Title:exer1.java
+ * @Package:com.atguigu.staticuse
+ * @Description:TODO(一句话描述该文件做了什么) 
+ * @author:30988  
+ * @time:2021年5月12日上午8:59:19
+ * 
+ */
+package com.atguigu.staticuse;
+
+public class exer1 {
+
+	public static void main(String[] args) {
+		Circle c1 = new Circle();
+		Circle c2 = new Circle();
+		
+		System.out.println("c1的Id" +c1.getId());
+		System.out.println("c2的Id" +c2.getId());
+	}
+}
+
+class Circle{
+	
+	private double radius;
+	private int id;
+	
+	public Circle() {
+		id  = init++;
+	}
+	
+	private static int toatal;
+	private static int init = 1001;
+
+	public double getRadius() {
+		return radius;
+	}
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
+}

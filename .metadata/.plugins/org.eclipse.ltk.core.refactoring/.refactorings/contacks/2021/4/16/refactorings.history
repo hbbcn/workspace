@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.sort.bubble.package-info.java&apos; to &apos;SortBubble.java&apos;&#x0D;&#x0A;- Original project: &apos;contacks&apos;&#x0D;&#x0A;- Original element: &apos;com.sort.bubble.package-info.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sort.bubble.SortBubble.java&apos;" description="Rename compilation unit &apos;package-info.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.sort.bubble{package-info.java" name="SortBubble.java" references="false" stamp="1618303843481" version="1.0"/>
+</session>
