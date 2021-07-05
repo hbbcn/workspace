@@ -1,8 +1,10 @@
 package com.atguigu.Proxy;
 
+import javax.imageio.metadata.IIOMetadataFormatImpl;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.concurrent.ForkJoinPool;
 
 
 /**
@@ -81,6 +83,11 @@ public class ProxyTest{
         Human proxyInstance = (Human) ProxyFactory.getProxyInstance(superMan);
         proxyInstance.getBelief();
         proxyInstance.eat("四川麻辣烫");
+
+
+
     }
 }
+
+
 
