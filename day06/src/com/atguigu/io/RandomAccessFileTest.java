@@ -65,8 +65,10 @@ public class RandomAccessFileTest{
     public void test2() throws IOException {
         RandomAccessFile rw = new RandomAccessFile("hello.txt", "rw");
 
+        RandomAccessFile randomAccessFile = new RandomAccessFile("hello.txt","");
         rw.seek(3);//将指针调到角标为3的位置
         rw.write("xyz".getBytes());
+
 
         rw.close();
 

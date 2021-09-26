@@ -92,6 +92,7 @@ public class ExceptionTest1 {
 		
 		String str = "123";
 		str = "abc";
+
 		
 		try {
 			
@@ -100,9 +101,11 @@ public class ExceptionTest1 {
 			System.out.println("hello----1");
 		}catch(NumberFormatException e) {
 			
-			
+
 			System.out.println(e.getMessage());
+			System.out.println("异常");
 //			e.printStackTrace();
+
 		}
 		
 		catch(NullPointerException e) {

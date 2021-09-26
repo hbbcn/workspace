@@ -76,13 +76,17 @@ class Person{
 	}
 	
 	static {
+		Person person = new Person();
+//		name = " ";
 		System.out.println("hello, static block1");
+
 	}
 	
 	static {
 		
 		System.out.println("hello, static block");
 		desc = "我是一个爱学习的人";
+		info();
 	}
 	
 	

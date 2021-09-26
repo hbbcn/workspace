@@ -9,16 +9,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- *@ClassName DateTimeTest
- *@Description  TODO
- *
+ * @ClassName DateTimeTest
+ * @Description TODO
+ * <p>
  * JDK 8 之前日期和时间的API测试
- *
- *@Author HuangQingbin
- *@Date 2021/6/2 14:30
- *@Version 1.0
+ * @Author HuangQingbin
+ * @Date 2021/6/2 14:30
+ * @Version 1.0
  */
-public class DateTimeTest{
+public class DateTimeTest {
 
 
     /*
@@ -58,22 +57,23 @@ public class DateTimeTest{
         System.out.println(format1);//2021-06-02 04:52:49
 
         //解析:要求字符串必须符合该构造器能识别的格式
-        Date sdf2 = sdf1.parse(format1);
+        Date sdf2 = sdf1.parse("2021-06-02 04:52:49");
         System.out.println(sdf2);
 
 
     }
 
-           @Test//练习1：字符串"2020-09-08"转换为java.sql.Date
+    @Test//练习1：字符串"2020-09-08"转换为java.sql.Date
 
-        public void testexer() throws ParseException {
-            String birth = "2020-09-08";
+    public void testexer() throws ParseException {
+        String birth = "2020-09-08";
 
-            SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-            Date date = sdf1.parse(birth);
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sdf1.parse(birth);
 
-            java.sql.Date date1 = new java.sql.Date(date.getTime());
-            System.out.println(date1);
+        java.sql.Date date1 = new java.sql.Date(date.getTime());
+        System.out.println(date.getTime());
+        System.out.println(date1);
 
 
     }
@@ -81,8 +81,8 @@ public class DateTimeTest{
 
     //1.System类中的currentTimeMillis()
     @Test
-    public void test1(){
-        long  time = System.currentTimeMillis();
+    public void test1() {
+        long time = System.currentTimeMillis();
         //返回当前时间与1970年1月1号0时0分0秒以毫秒为单位的时间差
         //称为时间戳
         System.out.println(time);
@@ -106,7 +106,7 @@ public class DateTimeTest{
      */
 
     @Test
-    public void test2(){
+    public void test2() {
         //构造器一：Date():创建一个对应当前时间的Date对象
         Date date1 = new Date();
         System.out.println(date1.toString());//Wed Jun 02 15:01:18 CST 2021

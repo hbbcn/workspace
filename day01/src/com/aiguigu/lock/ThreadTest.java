@@ -32,14 +32,14 @@ public class ThreadTest{
                         e.printStackTrace();
                     }
                     synchronized (s2) {
-                        s1.append("b");
-                        s2.append("2");
-                        System.out.println(s1);
-                        System.out.println(s2);
+            s1.append("b");
+            s2.append("2");
+            System.out.println(s1);
+            System.out.println(s2);
 
-                    }
-                }
-            }
+        }
+    }
+}
         }.start();
 
         new Thread(new Runnable() {

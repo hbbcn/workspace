@@ -39,6 +39,11 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
+
+
+	public static void main(String[] args) {
+		Person person = new Person();
+		person.sleep();
+	}
 	
 }

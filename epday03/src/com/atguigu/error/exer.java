@@ -23,7 +23,7 @@ public class exer {
 	        byte[] bytes = str1.getBytes();//使用默认字符集进行编码
 	        System.out.println(Arrays.toString(bytes));
 
-	        byte[] gbks = str1.getBytes("gbk");//使用CDC字符集进行编码
+	        byte[] gbks = str1.getBytes("gbk");//使用GBK字符集进行编码
 
 	        System.out.println(Arrays.toString(gbks));
 

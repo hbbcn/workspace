@@ -24,6 +24,8 @@ public class StirngTest{
 
     String: 字符串，使用一对""引起来表示。
     1.String声明为final的，不可被继承
+    用final修饰的对象值可变，但是引用不变，即：value指向不可变，但是value[]数组的值可变
+    但因为有private关键字对其进行封装达到value[]数组值也不可变的目的
     2.String实现了Serializable接口：表示字符串是支持序列化的。
              实现了Comparable接口：表示String可以比较大小
              3.String内部定义了final char[] value用于存储字符串数据
@@ -44,9 +46,10 @@ public class StirngTest{
 
         String s1 = "abc";//字面量的定义方式
         String s2 = "abc";
+        System.out.println(s1==s2);//true
         s1 = "hello";
 
-        System.out.println(s1 == s2);//比较s1和s2的地址
+        System.out.println(s1 == s2);//比较s1和s2的地址 false
         System.out.println(s1);//hello
         System.out.println(s2);//abc
 

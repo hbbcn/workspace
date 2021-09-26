@@ -11,7 +11,7 @@ import java.util.Iterator;
  *@Description
  * 1.集合元素的遍历操作，使用迭代器Iterator接口
  *
- * 2. 集合对象每次调用iterator方法都得到一个全新的迭代器对象，默认的游标都在集合的第一个元素之前
+ * 2.集合对象每次调用iterator方法都得到一个全新的迭代器对象，默认的游标都在集合的第一个元素之前
  * 3.内部定义了remove方法，可以在遍历的时候，删除集合中的元素，此方法不同于，集合直接调用remove()
  * 如果还未调用next()或上一次调用next()方法以后了remove()方法，再调用remove都会报IllegakStateException.
  * @Author HuangQingbin
@@ -70,14 +70,19 @@ public class IteratorTest{
                 Collection coll = new ArrayList();
                 coll.add(123);
                 coll.add(456);
+                coll.add(new Person("Jerry",20));
+                coll.add(new Person("err",20));
                 coll.add(new String ("Tom"));
                 coll.add(new Person("Jerry",20));
 
                 Iterator iterator = coll.iterator();
 
+
                 while(iterator.hasNext()){
                     Object obj = iterator.next();
+
                     if("Tom".equals(obj)){
+                        System.out.println(iterator);
                         iterator.remove();
                     }
                 }

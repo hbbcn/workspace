@@ -6,7 +6,7 @@ package com.aiguigu.thread;
  * 2.实现类去实现Runnable中抽象方法：run()
  * 3.创建实现类的对象
  * 4.将此对象作为参数传递到Thread类的构造器中，创建Thread类的对象
- * 5.通过Thread类的对象说明start()
+ * 5.通过Thread类的对象调用start()
  *
  *@Author HuangQingbin
  *@Date 2021/5/22 22:27

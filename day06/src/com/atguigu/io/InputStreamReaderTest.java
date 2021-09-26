@@ -3,6 +3,7 @@ package com.atguigu.io;
 import org.junit.Test;
 
 import java.io.*;
+import java.nio.file.Files;
 
 /**
  *@ClassName InputStreamReaderTest
@@ -20,10 +21,10 @@ import java.io.*;
  * 4.字符集
  * ASCII: 美国标准信息交换码
  *      用一个字节的七位可以表示
- * GBK： 中国的中文编码表升级，融合了更多的中文文字符号。最多两个字节编码
- * Unicode: 国际标准码，融合了目前人类使用的所有字符。为每个字符分配唯一的字符码。所有的文字都有两个字节来表示。
- * UTF-8：变长的编码方式，可用1-4个字节来表示一个字符。
- *@Author HuangQingbin
+ *  * GBK： 中国的中文编码表升级，融合了更多的中文文字符号。最多两个字节编码
+ *  * Unicode: 国际标准码，融合了目前人类使用的所有字符。为每个字符分配唯一的字符码。所有的文字都有两个字节来表示。
+ *  * UTF-8：变长的编码方式，可用1-4个字节来表示一个字符。
+ *  *@Author HuangQingbin
  *@Date 2021/6/25 17:39
  *@Version 1.0
  */
@@ -31,6 +32,8 @@ public class InputStreamReaderTest{
 
     @Test
     public void test1() throws IOException {
+
+
 
         FileInputStream fis = new FileInputStream("hello.txt");
         //InputStreamReader isr = new InputStreamReader(fis);//使用系统默认的字符集
@@ -62,7 +65,6 @@ public class InputStreamReaderTest{
         int len;
         while ((len = isr.read(cbuf)) != -1){
             osw.write(cbuf,0,len);
-
         }
 
         //3.关闭资源

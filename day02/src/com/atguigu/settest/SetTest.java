@@ -39,7 +39,7 @@ public class SetTest{
         此哈希值接着通过某种算法计算出在HashSet底层数组中存放的位置（即为：索引位置）， 判断数组此位置上是否
         已经有元素：
                如果此位置上没有其他元素，则元素a添加成功。--->情况1
-               如果此位置上其他元素b(或以链表形式存在的多个元素），则比较元素a与元素b的hash值：
+               如果此位置上有其他元素b(或以链表形式存在的多个元素），则比较元素a与元素b的hash值：
                     如果hash值不相同，则元素a添加成功。--->情况2
                     如果hash值相同，进而需要调用元素a所在类的equals()方法：
                             equals()返回true,元素a添加失败
@@ -51,6 +51,8 @@ public class SetTest{
 
          HashSet底层： 数组 + 链表的结构
 
+所有放在 hashset中的集合元素实际上由 hashmap的key来保存，
+而 hashset中的 hashmap的 value则存储了一个PRESENT的静态object对象
      */
 
     @Test

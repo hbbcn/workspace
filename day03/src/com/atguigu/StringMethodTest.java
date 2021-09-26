@@ -38,7 +38,7 @@ public class StringMethodTest{
         boolean b2 = str1.startsWith("He");//返回该字符串是否以指定的前缀开始
         System.out.println(b2);
 
-        boolean b3 = str1.startsWith("ll",3);//返回该字符串是否从指定的索引开始的结果
+        boolean b3 = str1.startsWith("ll",2);//返回该字符串是否从指定的索引开始的结果
         System.out.println(b3);
 
         String str2 = "wo";

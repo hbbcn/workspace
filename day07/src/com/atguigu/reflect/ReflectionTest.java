@@ -23,6 +23,16 @@ import java.util.Set;
  * 来获取此运行时类
  * //获取实例的前三种方式需要掌握
  *
+ *
+ * Java反射：在Java运行时环境中，对于任意一个类，能否知道这个类有哪些属性和方法？
+ * 对于任意一个对象，能否调用它的任意一个方法Java反射机制主要提供了以下功能：
+ *                                      在运行时判断任意一个对象所属的类。
+ *                                      在运行时构造任意一个类的对象。
+ *                                      在运行时判断任意一个类所具有的成员变量和方法。
+ *                                      在运行时调用任意一个对象的方法。
+ *
+
+ *
  *@Author HuangQingbin
  *@Date 2021/6/27 14:26
  *@Version 1.0
@@ -52,21 +62,32 @@ public class ReflectionTest{
     public void test2() throws Exception {
         Class clazz = Person.class;
         //1.通过反射，创建Person类的对象
+//        Object o = clazz.newInstance(); //调用Person空参构造器实例化Person类
+
         Constructor cons = clazz.getConstructor(String.class,int.class);
 
-        Person obj = (Person)cons.newInstance("Tom", 12);
-        System.out.println(obj.toString());
+        Person obj = (Person)cons.newInstance("Tom", 12);//调用带参的构造器实例化Person类
+//      Person obj = new Person();// 实例化2
+         System.out.println(obj.toString());
 
         //通过反射，调用对象指定的属性、方法
         //调用属性
         Field age = clazz.getDeclaredField("age");
         age.set(obj,10);
+        //调用私有属性
+        Field name1 = clazz.getDeclaredField("name");
+        name1.setAccessible(true);
+        name1.set(obj,"huge");
+
 
         System.out.println(obj.toString());
 
         //调用方法
+        System.out.println("****************");
         Method show = clazz.getDeclaredMethod("show");
         show.invoke(obj);
+
+
 
         //通过反射，可以调用Person类的私有的结构。比如：私有的构造器、方法、属性
         Constructor cons1 = clazz.getDeclaredConstructor(String.class);
@@ -116,7 +137,10 @@ public class ReflectionTest{
 
 
 
+
     }
+
+
 
 }
 

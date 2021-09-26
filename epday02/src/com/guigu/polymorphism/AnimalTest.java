@@ -7,6 +7,9 @@
  * 
  */
 package com.guigu.polymorphism;
+
+import javax.security.auth.login.AccountNotFoundException;
+
 //多态性的使用
 public class AnimalTest {
 	
@@ -17,6 +20,12 @@ public class AnimalTest {
 		test.func(new Dog());
 		
 		test.func(new Cat());
+
+		Animal dog = new Dog();
+		Animal a = (Animal)dog;
+
+//		Dog dog1 = (Dog) dog;
+//		dog1.
 	}
 
 	
@@ -42,7 +51,10 @@ class Animal{
 	public void shout() {
 		System.out.println("动物 叫");
 	}
-	
+
+	public void sleep(){
+
+	}
 
 	
 }
@@ -55,6 +67,10 @@ class Dog extends Animal{
 	public void shout() {
 	
 		System.out.println("汪！汪！汪！");
+	}
+
+	public void run(){
+
 	}
 }
 

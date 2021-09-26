@@ -61,12 +61,14 @@ public class TreeSetTest{
                    Person p1 = (Person)o1;
                    Person p2 = (Person)o2;
 
-                   return Integer.compare(p1.getAge(),p2.getAge());
+//                   return Integer.compare(p1.getAge(),p2.getAge());
 
+                   return p1.getName().compareTo(p2.getName());
                }else{
                    throw new RuntimeException("数据错误");
                }
             }
+
 
         };
 

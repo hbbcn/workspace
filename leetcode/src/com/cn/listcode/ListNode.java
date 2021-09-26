@@ -19,13 +19,12 @@ public class ListNode {
 
     }
 
-
     public ListNode() {
 
     }
 }
 
-class Test {
+class ListNodeTest {
     public static void main(String[] args) {
         ListNode head = new ListNode(0);//创建首节点
         ListNode strNode;
@@ -37,11 +36,7 @@ class Test {
             head.next =listNode;
             head = listNode;
         }
-
-
         print(strNode);
-
-
     }
     static void print(ListNode listNode){
 

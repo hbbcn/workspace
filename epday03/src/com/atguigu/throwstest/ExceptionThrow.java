@@ -38,10 +38,10 @@ class Students{
 			this.id = id;
 		}else {
 //			System.out.println("你输入的数据非法");
-			//手动抛出异常对象
-			//throw new RuntimeException("你输入的数据非法");
-			throw new MyException("你输入的数据非法");
-		}
+		//手动抛出异常对象
+		throw new RuntimeException("你输入的数据非法");
+//		throw new MyException("你输入的数据非法");
+	}
 }
 	@Override
 	public String toString() {

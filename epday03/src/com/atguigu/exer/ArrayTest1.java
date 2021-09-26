@@ -1,6 +1,6 @@
 package com.atguigu.exer;
 
-//长度为6的int类型的数组要求数组元素的值都再1-30之间，且是随机赋值，要求各个元素的值都不同
+//长度为6的int类型的数组要求数组元素的值都在1-30之间，且是随机赋值，要求各个元素的值都不同
 import java.util.*;
 
 public class ArrayTest1 {

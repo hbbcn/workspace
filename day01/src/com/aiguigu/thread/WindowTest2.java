@@ -17,22 +17,14 @@ class Window2 implements Runnable {
 
     private static int ticket = 100;
 
-
     @Override
     public void run() {
-
-
         while (true) {
-
                 show();
-
-
             }
-
-
         }
 
-        public synchronized void show(){//有默认的同步监视器：this
+        public  synchronized void show(){//有默认的同步监视器：this
             if (ticket > 0) {
                 try {
                     Thread.sleep(100);
@@ -42,8 +34,6 @@ class Window2 implements Runnable {
                 System.out.println(Thread.currentThread().getName() + "当前票数：" + ticket);
                 ticket--;
             }
-
-
         }
 }
 

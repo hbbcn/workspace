@@ -10,6 +10,9 @@ package com.atguigu.wrapper;
 
 import org.junit.Test;
 
+import java.io.InputStreamReader;
+import java.io.StringReader;
+
 /*
  * 包装类的使用
  * 1.java提供了8种基本类型对应的包装类，使得基本数据类型的变量具有类的特征
@@ -21,14 +24,17 @@ import org.junit.Test;
  */
 public class WrapperTest {
 
-	//String类型----》基本数据类型、包装类、调用包装类的parseXxx（）
+
 	
 	
 @Test
 public void test5() {
-	
+	//String类型----》基本数据类型、包装类、调用包装类的parseXxx（）
 	String str1  = "123";
-	int num2 = Integer.parseInt(str1);
+	int num2 = Integer.parseInt(str1);//String ----> 基本数据类型
+	Integer integer = new Integer(str1);//String ----> 包装类
+
+
 	System.out.println(num2+1);
 	
 	String str2 = "true";
@@ -51,8 +57,9 @@ public void test5() {
 	//包装类----》String	
 		double f2 = 12.4;
 		Double d1 = new Double(f2);
-		
+
 		String str3 = String.valueOf(d1);
+
 		System.out.println(str3.toString()); 
 		
 		System.out.println("***********");

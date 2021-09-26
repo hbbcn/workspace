@@ -6,6 +6,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.sql.SQLOutput;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 /**
@@ -40,5 +44,37 @@ public class ClassLoaderTest{
         System.out.println("user = " + user + ",password = " + password);
 
     }
+
+    @Test
+        public void test0() throws ParseException {
+//        Date date = new Date("2020/4/5");
+//        System.out.println(date);
+//
+//        SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
+//        String format = sd.format(date);
+//        System.out.println(format);
+//
+//        Date parse = sd.parse("2021-07-07");
+//        System.out.println("********");
+//        System.out.println(parse.getTime());
+//        java.sql.Date d = new java.sql.Date(parse.getTime());
+//        System.out.println(d);
+//        long time = d.getTime();
+//        System.out.println(time);
+//        Date d1 = new Date(time);
+//        System.out.println("**********");
+//        System.out.println(d1);
+//
+//        System.out.println(parse);
+
+
+
+
+    java.sql.Date date = new java.sql.Date(7443795745387L);
+        System.out.println(date);
+}
+
+
+
 }
 

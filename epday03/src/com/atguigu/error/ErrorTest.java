@@ -33,7 +33,7 @@ import org.junit.Test;
 //public class ErrorTest {
 //
 //	public static void main(String[] args) {
-//		//栈溢出：java.lang.StactOverflowErro
+//		//栈溢出：java.lang.StackOverflowError
 //		
 //		main(args);
 //		

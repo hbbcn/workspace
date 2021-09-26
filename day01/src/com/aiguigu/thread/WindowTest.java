@@ -11,13 +11,13 @@ package com.aiguigu.thread;
 class Window extends Thread {
     private static int ticket = 100;
 
-    static Object obj = new Object();
+    static Object obj = new Object();//类锁
 
     @Override
     public void run() {
 
         while (true) {
-            synchronized (obj){
+            synchronized (obj) {
                 if (ticket > 0) {
                     try {
                         Thread.sleep(100);

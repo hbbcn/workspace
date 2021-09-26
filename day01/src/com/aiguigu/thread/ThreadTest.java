@@ -39,13 +39,19 @@ public class ThreadTest {
     public static void main(String[] args) {
         MyThread t1 = new MyThread();
 
+        t1.start();
+
+     /*   Thread t3 = new Thread(t1);
+        t3.start();*/
 
         //4.通过此对象调用start()
-        t1.start();//①启动当前线程 ②调用当前线程run()方法
+        //t1.start();//①启动当前线程 ②调用当前线程run()方法
         //问题二，再启动一个线程，遍历一百以内的偶数，不可以还让已经start去执行，会报错IllegalThreadStateException
         //我们需要重新创建一个线程的对象
         MyThread t2 =  new MyThread();
         t2.start();
+        /*Thread t2 = new Thread(t1);
+        t2.start();*/
 
 
         //如下操作仍然是在main线程中执行的

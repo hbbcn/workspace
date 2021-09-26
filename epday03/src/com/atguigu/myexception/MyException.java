@@ -11,7 +11,7 @@ package com.atguigu.myexception;
  * 如何自定义异常类
  *   1.继承于现有的异常结构，RuntimeException Exception
  *   2.提供全局常量
- * 
+ *
  * 
  */
 public class MyException extends RuntimeException {
@@ -23,6 +23,6 @@ public class MyException extends RuntimeException {
 	 }
 	 
 	 public MyException(String msg) {
-		super(msg); 
+		super(msg);
 	 }
 }

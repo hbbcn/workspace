@@ -3,15 +3,17 @@ package com.atguigu.listtest;
 import com.atguigu.collection.Person;
 import org.junit.Test;
 
+import javax.xml.transform.Source;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 /**
  *@ClassName ListTest
  *@Description   |----List接口：存储有序的、可重复的数据  --->“动态数组”
  *  *                  |---ArrayList: 作为List主要实现类,线程不安全，效率高：底层使用Object[]存储
- *                     |---LinkedList：对于频繁的插入和删除操作使用此类效率比ArrayList高，底层使用的双向链表存储
+ *                     |---LinkedList：线程不安全，对于频繁的插入和删除操作使用此类效率比ArrayList高，底层使用的双向链表存储
  *                     |---Vector：作为List的古老实现类 线程安全，效率低，底层使用Object[]存储
  *    1.1  ArrayList的源码分析：jdk7 情况如下
  *          ArrayList list = new ArrayList();//底层创建了长度是10的Object[]数组elementData.....
@@ -34,7 +36,7 @@ import java.util.List;
  *      //将123 封装到Node中，创建了Node对象。
  *
  *      其中，Node定义为：体现了LinkedList的双向链表的说法
- *      private static class Mode<E>{
+ *      private static class Node<E>{
  *          E item;
  *          Node<E> next;
  *          Node<E> prev;
@@ -58,6 +60,58 @@ import java.util.List;
  *@Author HuangQingbin
  *@Date 2021/6/6 17:19
  *@Version 1.0
+ */
+
+/*
+ArrayList:线程不安全的两个原因
+们先来看看 ArrayList 的 add 操作源码。
+  public boolean add(E e) {
+        ensureCapacityInternal(size + 1);
+        elementData[size++] = e;
+        return true;
+    }
+ArrayList 的不安全主要体现在两个方面。
+    其一：
+elementData[size++] = e;
+不是一个原子操作，是分两步执行的。
+elementData[size] = e;
+size++;
+
+单线程执行这段代码完全没问题，可是到多线程环境下可能就有问题了。可能一个线程会覆盖另一个线程的值。
+
+    列表为空 size = 0。
+    线程 A 执行完 elementData[size] = e;之后挂起。A 把 "a" 放在了下标为 0 的位置。此时 size = 0。
+    线程 B 执行 elementData[size] = e; 因为此时 size = 0，所以 B 把 "b" 放在了下标为 0 的位置，于是刚好把 A 的数据给覆盖掉了。
+    线程 B 将 size 的值增加为 1。
+    线程 A 将 size 的值增加为 2。
+
+这样子，当线程 A 和线程 B 都执行完之后理想情况下应该是 "a" 在下标为 0 的位置，"b" 在标为 1 的位置。而实际情况确是下标为 0 的位置为 "b"，下标为 1 的位置啥也没有。
+   其二：
+ArrayList 默认数组大小为 10。假设现在已经添加进去 9 个元素了，size = 9。
+
+    线程 A 执行完 add 函数中的ensureCapacityInternal(size + 1)挂起了。
+    线程 B 开始执行，校验数组容量发现不需要扩容。于是把 "b" 放在了下标为 9 的位置，且 size 自增 1。此时 size = 10。
+    线程 A 接着执行，尝试把 "a" 放在下标为 10 的位置，因为 size = 10。但因为数组还没有扩容，最大的下标才为 9，所以会抛出数组越界异常 ArrayIndexOutOfBoundsException
+
+
+
+如何实现ArrayList线程安全
+1、使用synchronized关键字；
+
+2.使用Collections.synchronizedList();使用方法如下：
+
+假如你创建的代码如下：List<Map<String,Object>> data=new ArrayList<Map<String,Object>>();
+
+那么为了解决这个线程安全问题你可以这么使用Collections.synchronizedList()，如：
+
+List<Map<String,Object>> data=Collections.synchronizedList(new ArrayList<Map<String,Object>>());
+
+其他的都没变，使用的方法也几乎与ArrayList一样，大家可以参考下api文档；
+
+额外说下 ArrayList与LinkedList；这两个都是接口List下的一个实现，用法都一样，但用的场所的有点不同，
+ArrayList适合于进行大量的随机访问的情况下使用，LinkedList适合在表中进行插入、删除时使用，
+二者都是非线程安全，解决方法同上（为了避免线程安全，以上采取的方法，特别是第二种，其实是非常损耗性能的）。
+
  */
 public class ListTest{
 
@@ -85,6 +139,12 @@ public class ListTest{
         System.out.println(list.get(0));
         Person p = new Person();
 
+        System.out.println("**********");
+        Iterator iterator = list.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+        System.out.println("*****************");
 
 
     }

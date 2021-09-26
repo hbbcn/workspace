@@ -32,7 +32,8 @@ public class ExceptionTest2 {
 			}
 		
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+//			e.printStackTrace();
+			System.out.println("文件不存在");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {
@@ -47,6 +48,14 @@ public class ExceptionTest2 {
 		
 		System.out.println("niao ");
 	}
-	
+
+	@Test
+	public void test1(){
+
+	int[] arr = new int[]{123};
+		System.out.println(arr[2]);
+
+
+	}
 	
 }

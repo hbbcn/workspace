@@ -14,8 +14,7 @@ public class Exer4 {
 		int i = low;
 		int pow = a[i];
 		int j = height;
-		
-		
+
 		if(i>=j) {
 			return;
 		}

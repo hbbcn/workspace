@@ -71,6 +71,23 @@ public class FileReaderWriterTest {
 
     }
 
+    @Test
+    public void test() throws Exception {
+        File file = new File("src\\hello.txt");
+
+        FileInputStream fs  = new FileInputStream(file);
+
+        byte[] buffer = new byte[5];
+        int len;
+        while((len = fs.read()) != -1){
+            System.out.println((char)len);
+
+        }
+
+
+    }
+
+
 
     //对read()操纵升级：使用read的重载方法
     @Test
@@ -88,9 +105,9 @@ public class FileReaderWriterTest {
             while ((len = fr.read(cbuf)) != -1) {
 
                 //错误写法
-                //            for (int i = 0; i < cbuf.length; i++) {
-                //                System.out.println(cbuf[i]);
-                //            }
+//                            for (int i = 0; i < cbuf.length; i++) {
+//                                System.out.print(cbuf[i]);
+//                            }
                 //正确写法
                 for (int i = 0; i < len; i++) {
                     System.out.print(cbuf[i]);
@@ -133,7 +150,7 @@ public class FileReaderWriterTest {
         File file = new File("hello1.txt");
         FileWriter fw = new FileWriter(file, false);
 
-        fw.write("I have a dream! \n".toCharArray());
+        fw.write("I watch T V \n");
         fw.write("You need to  have a dream");
         fw.close();
     }
@@ -179,7 +196,7 @@ public class FileReaderWriterTest {
     public void test0() throws FileNotFoundException {
         File file = new File("hello.txt");
 
-        FileOutputStream out = new FileOutputStream(file);
+        FileOutputStream fs = new FileOutputStream(file);
 
     }
 

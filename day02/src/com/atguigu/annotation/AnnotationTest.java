@@ -17,7 +17,7 @@ import java.util.ArrayList;
  *
  * Annotation的使用示例
  * 示列一：生成文档相关注解
- * 示列二：在编译时进行格式检查（JDk内置的三个基本注解）
+ * 示列二：在编译时进行格式检查（JDK内置的三个基本注解）
  * @Override: 限定重写父亲的方法，该注解只能用于方法
  * @Deprecated ；用于表示所修饰的元素（类，方法等）已过时。通常是因为所修饰的结构危险或村在更好的选择
  * @SupperssWarnings :抑制编译器警告。

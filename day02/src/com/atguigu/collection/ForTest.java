@@ -36,10 +36,10 @@ public void test1(){
    @Test
     public void test2(){
     int[] arr = new int[]{1, 3, 5, 6};
-    //for(数组元素的类型 局部变量：数组对象)
-    for(int  i : arr){
-        System.out.println(i);
-    }
+       //for(数组元素的类型 局部变量：数组对象)
+       for(int  i : arr){
+           System.out.println(i);
+       }
 
 
 
@@ -58,6 +58,15 @@ public void test1(){
         System.out.println(i);
     }
     }
+
+    @Test
+    public void test4(){
+
+           Object ob =  new ArrayList<>();
+           ((ArrayList) ob).add(1);
+
+    }
+
 
 
 

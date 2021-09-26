@@ -90,8 +90,9 @@ public class StringBufferBuilder{
         @Test
         public void test1(){
             StringBuffer sb1 = new StringBuffer("abc");
-                sb1.replace(0,1,"dm");
-                System.out.println(sb1);
+            StringBuffer buffer = sb1.replace(0, 1, "dm");
+            System.out.println(sb1);
+            System.out.println(buffer == sb1);
 
                 String str = new String("qbc");
                 str.replace('q','m');

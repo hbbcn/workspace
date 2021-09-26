@@ -39,7 +39,7 @@ class NumberThread implements Runnable{
 
 }
 
-class NumberThread2 implements  Runnable{
+class NumberThread2 implements Runnable{
 
     @Override
     public void run() {

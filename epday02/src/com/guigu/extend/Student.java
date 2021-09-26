@@ -45,4 +45,9 @@ public class Student extends Person {
 	public void show() {
 		System.out.println("name" + name + ", age :" +getAge());
 	}
+
+	public static void main(String[] args) {
+		Student student = new Student();
+			student.name="";
+	}
 }

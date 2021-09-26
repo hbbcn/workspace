@@ -50,7 +50,7 @@ public class FileTest {
         System.out.println(file2);
 
         //构造器2：
-        File file3 = new File("D:\\IDEA_javacode\\workspace", "JavaSenior");
+        File file3 = new File("D:\\IDEA_javacode\\workspace\\day05", "JavaSenior");
         System.out.println(file3);
 
         //构造器3：

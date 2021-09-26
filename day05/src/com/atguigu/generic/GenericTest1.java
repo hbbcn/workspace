@@ -35,6 +35,7 @@ public class GenericTest1{
         //由于子类在继承带泛型的父类时，指明
         sub1.setOrderT(1122);
 
+
         SubOrder1<String> sub2 = new SubOrder1<>();
         sub2.setOrderT("hello");
 

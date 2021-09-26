@@ -12,7 +12,7 @@ import java.util.*;
  * 1.集合、数组都是对多个数据进行存储操作的结构，简称Java容器
  *  说明：此时的存储，主要指的是内存层面的存储，不涉及到持久化的存储（.txt, .jpg,.avi,数据库中
  *
- *  2.1数组在存储多个数据方面的特点：
+ *  2.1. 数组在存储多个数据方面的特点：
  *          >一旦初始化以后，其长度就确定了。
  *          >数组一旦定义好，其元素的类型也就确定了。我们也就只能操作指定类型的数据了。
  *          比如：String[] arr, int []arr1; Object[] arr2;
@@ -23,7 +23,7 @@ import java.util.*;
  *          >数组存储的特点：有序、可重复，对于无序、不可重复的需求，不能满足。
  *
  *  二、集合框架：单例集合，用来存储一个一个的对象
- *      |-----Collection接口：单例集合，用来存储一个一个的对象
+ *      |----Collection接口：单例集合，用来存储一个一个的对象
  *              |----List接口：存储有序的、可重复的数据  --->“动态数组”
  *                  |---ArrayList、LinkedList、Vector
  *              |----Set接口：存储无序的、不可重复的数据 --->高中讲的“集合”
@@ -44,9 +44,9 @@ import java.util.*;
  * 查: get(int index)
  * 插: add(int index,Object ele)
  * 长度:size
- * 遍历:① Iterator迭代器
- *      ②增强for循环
- *      ③普通循环
+ * 遍历: ①Iterator迭代器
+ *       ②增强for循环
+ *       ③普通循环
  *@Author HuangQingbin
  *@Date 2021/6/4 16:33
  *@Version 1.0
@@ -63,6 +63,8 @@ public class CollectionTest {
         coll.add(123);//自动装箱
         coll.add(new Date());
 
+        System.out.println(coll);
+//        Integer integer = Integer.valueOf(123);
         //size();获取添加的元素的个数
         System.out.println(coll.size());//3
 
@@ -84,21 +86,22 @@ public class CollectionTest {
 
         coll.add(new String("Tom"));
         coll.add(new Person("Jerry", 20));
+
         //contain(Object obj): 判断当前集合中是否包含Obj
         //我们在判断时会调用obj所在类的equals()方法
 
-
+        System.out.println(coll);
         boolean contains = coll.contains(123);
         System.out.println(contains);
 
         System.out.println(coll.contains(new String("Tom")));//true
         System.out.println("**********************");
-        System.out.println(coll.contains(new Person("Jerry", 20)));//不重写equale是false
+        System.out.println(coll.contains(new Person("Jerry", 20)));//不重写equals是false
 
 
-        //2.containAll(CollectionAll coll3);//判断形参call1中的所有元素是否都存在于当前集合中
+        //2.containAll(CollectionAll coll3);//判断形参coll3中的所有元素是否都存在于当前集合中
 
-        Collection coll3 = Arrays.asList(123, 456, 789);
+        Collection coll3 = Arrays.asList(123, 456);
         System.out.println(coll.containsAll(coll3));
 
 
@@ -118,12 +121,14 @@ public class CollectionTest {
         coll.remove(new Person("Jerry", 20));
         System.out.println(coll);
 
-        //4.removeAll(Collection coll); 差集：从当前集合移除coll1中的所有元素
+        //4.removeAll(Collection coll); 差集：从当前集合移除与coll1中相等的所有元素
 
 
         Collection coll1 = Arrays.asList(123, 456,799);
         coll.removeAll(coll1);
         System.out.println(coll);
+
+
 
     }
 
@@ -139,6 +144,7 @@ public class CollectionTest {
 //
 //        coll.retainAll(coll1);
 //        System.out.println(coll);
+
 
 
         //6.equals(Object obj);当前集合和形参集合进行比较
@@ -188,5 +194,7 @@ public class CollectionTest {
 
 
     }
+
+
 }
 
