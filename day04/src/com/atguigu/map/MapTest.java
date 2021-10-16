@@ -10,12 +10,12 @@ import java.util.function.BiConsumer;
 /**
  *@ClassName MapTest
  *@Description
- *  \---Map:双列数据，存储key-value对的数据   ---类似于高中学的函数：y = f(x)
- *          \---HashMap:作为Map的主要实现类不安全，效率高 存储null的Key和value
+ *  \---Map: 双列数据，存储key-value对的数据   ---类似于高中学的函数：y = f(x)
+ *          \---HashMap: 作为Map的主要实现类不安全，效率高 存储null的Key和value
  *                  \---LinkedHashMap;保证在遍历map元素时，可以按照添加的顺序实现遍历。
  *                                      原因：在原有的HashMap底层结构基础上，添加了一对指针，指向前一个元素和后一个元素
  *                                         对于频繁的遍历操作，此类执行效率高于HashMap。
- *          \---TreeMap;保证按照添加的key-value对进行排序，实现排序遍历 此时考虑key的自然排序和定制排序
+ *          \---TreeMap: 保证按照添加的key-value对进行排序，实现排序遍历 此时考虑key的自然排序和定制排序
  *                       底层使用红黑树
  *          \---Hashtable：作为古老实现类：线程安全，效率低，不能存储null的Key和values
  *                  \---Properites：常用来处理配置文件。key和value都是String类型
@@ -62,16 +62,16 @@ import java.util.function.BiConsumer;
  *
  *                BEFAULT_INITAL_CAPACITY: HashMap的默认值：16
  *                DEFAULT_LOAD_FACTOR: HashMap的默认加载因子：0.75
- *  *                threshold:扩容的临界值 = 容量 * 填充因子：16 * 0.75 => 12
- *  *                TREEIFA_THRESHOLD: Bucket中链表的长度大于该默认值，转化为红黑树：8
- *  *                MIN_TREEIFA_CAPACITY: 桶中的Node被树化时最小的hash表的容量：64
+ *  *             threshold:扩容的临界值 = 容量 * 填充因子：16 * 0.75 => 12
+ *  *             TREEIFA_THRESHOLD: Bucket中链表的长度大于该默认值，转化为红黑树：8
+ *  *             MIN_TREEIFA_CAPACITY: 桶中的Node被树化时最小的hash表的容量：64
  *  *
  *
  * HashMap底层是一个Entry数组，当发生hash冲突的时候，HashMap是采用链表的方式来解决的，
  * 在对应的数组位置存放链表的头结点。对链表而言，新加入的节点会从头结点加
  *
  *  HashMap线程不安全：
- *          ①  2个线程执行put操作： 线程1put()时，记录了头结点为node1，这时时间片用完，线程2put()，且把数据插在了链表的头部，
+ *          ①  2个线程执行put操作： 线程1 put()时，记录了头结点为node1，这时时间片用完，线程2 put()，且把数据插在了链表的头部，
  *          完成put操作。线程1接着完成put()剩余的操作，这时新的头结点已经变了，但是线程1记录的旧的头结点，把数据插入到头结点，
  *          覆盖了线程2put的数据，导致线程不安全
  *          ② A线程执行get获取数据

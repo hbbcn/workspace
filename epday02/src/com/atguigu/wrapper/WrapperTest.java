@@ -35,6 +35,7 @@ public void test5() {
 	Integer integer = new Integer(str1);//String ----> 包装类
 
 
+
 	System.out.println(num2+1);
 	
 	String str2 = "true";

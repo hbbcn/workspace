@@ -20,7 +20,7 @@ import java.util.List;
  *          List.add(123);//elementData[0] = new Integer(123);
  *          ....
  *          List.add(11);//如果此次的添加导致底层elementData数组容量不够，则扩容。默认情况下扩容为原来容量的1.5倍，
- *          同时需要将原有的数组中的数据复制到新的数组中。
+ *  *          同时需要将原有的数组中的数据复制到新的数组中。
  *          结论：建议在开发中使用带参的构造器：ArrayList = new ArrayList(int capacity).
  *      1.2 在jdk8中ArrayList的变化
  *      ArrayList list = new ArrayList();//底层创建Object[] elementData初始化为{} ，并没有创建长度为10的数组

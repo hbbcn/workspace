@@ -72,6 +72,7 @@ public class SetTest{
 //        while (iterator.hasNext()){
 //            System.out.println(iterator.next());
 //        }
+
         Iterator iterator = set.iterator();
         for (int i = 0; i < set.size(); i++) {
             System.out.println(iterator.next());

@@ -9,6 +9,8 @@ import java.net.*;
  *@ClassName UDPTest
  *@Description  TODO
  * UDP协议的网络编程
+ * 该协议称为用户数据报协议（UDP，User Datagram Protocol）。
+ * UDP 为应用程序提供了一种无需建立连接就可以发送封装的 IP 数据包的方法。
  *@Author HuangQingbin
  *@Date 2021/6/27 13:12
  *@Version 1.0

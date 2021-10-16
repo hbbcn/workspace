@@ -3,6 +3,8 @@ package com.atguigu.objectstream;
 import org.junit.Test;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.util.Arrays;
 
 /**
  *@ClassName ObjectOutputStreamTest
@@ -69,7 +71,8 @@ public class ObjectOutputStreamTest{
             if(ois != null){
                 try {
                     ois.close();
-} catch (IOException e) {
+}
+                catch (IOException e) {
         e.printStackTrace();
                 }
             }
