@@ -53,15 +53,19 @@ public class InputStreamReaderTest{
     @Test
     public void test2() throws IOException {
         File file = new File("hello.txt");
-        File file1 = new File("hello_gbk.txt");
+//        File file1 = new File("hello_gbk.txt");
 
+        char[] chars = {'你'};
+        char[] c = new char[3];
+        System.out.println();
+        int[] ints = new int[]{};
         FileInputStream fis = new FileInputStream(file);
-        FileOutputStream fos = new FileOutputStream(file1);
+        FileOutputStream fos = new FileOutputStream("d:/hello1.txt");
 
-        InputStreamReader isr = new InputStreamReader(fis,"utf-8");
-        OutputStreamWriter osw = new OutputStreamWriter(fos,"gbk");
+        InputStreamReader isr = new InputStreamReader(fis);
+        OutputStreamWriter osw = new OutputStreamWriter(fos);
         //2.读写过程
-        char[] cbuf = new char[5];
+        char[] cbuf = new char[1];
         int len;
         while ((len = isr.read(cbuf)) != -1){
             osw.write(cbuf,0,len);

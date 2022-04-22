@@ -55,6 +55,7 @@ public class ThreadTest {
 
 
         //如下操作仍然是在main线程中执行的
+/*
         for (int i = 0; i < 50; i++) {
             try {
                 Thread.sleep(10);
@@ -63,6 +64,7 @@ public class ThreadTest {
             }
             System.out.println("*****main()******");
         }
+*/
 
     }
 

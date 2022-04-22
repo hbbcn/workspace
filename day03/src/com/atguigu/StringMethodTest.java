@@ -19,9 +19,24 @@ public class StringMethodTest{
         String str1 = "北京尚硅谷教育北京";
         String str2 = str1.replace('北', '东');//替换指定字符串中出现的字符
         System.out.println(str2);
+        int i1 = str1.indexOf("北",4);
+        System.out.println(i1);
+        char c = str1.charAt(1);
+        System.out.println(c);
+
+
+        String s = null;
+        String s1 = null;
+        System.out.println(s + s1);
+
+
 
         String str3 = str1.replace("北京","上海");
         System.out.println(str3);
+
+        int i = str1.indexOf("尚谷");
+        System.out.println(i);
+
 
 
     }

@@ -46,7 +46,7 @@ public class ThrowsTest {
 
     }
 
-    public static void method1() throws FileNotFoundException, IOException {
+    public static void method1() throws  IOException {
 
 
         File file = new File("hello.txt");

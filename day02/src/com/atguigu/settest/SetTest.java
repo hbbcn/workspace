@@ -3,10 +3,7 @@ package com.atguigu.settest;
 import com.atguigu.collection.Person;
 import org.junit.Test;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  *@ClassName SetTest
@@ -66,6 +63,7 @@ public class SetTest{
         set.add(new Person("Tom",12));
         set.add(129);
 
+
         System.out.println(set.size());
 
 //        Iterator iterator = set.iterator();
@@ -77,6 +75,8 @@ public class SetTest{
         for (int i = 0; i < set.size(); i++) {
             System.out.println(iterator.next());
         }
+
+
     }
 
 

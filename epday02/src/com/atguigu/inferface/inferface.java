@@ -65,9 +65,7 @@ interface Flyable {
 
     void stop();
 
-    private  void privateMethod() {
-        System.out.println("private私有方法被调用");
-    }
+
 
     public static void privateStaticMethod() {
         System.out.println("private私有静态方法被调用");

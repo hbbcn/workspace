@@ -99,8 +99,6 @@ public class GenericTest {
         List<Integer> list = order.copyFromArrayToList(arr);
         System.out.println(list);
 
-
-
     }
 
 

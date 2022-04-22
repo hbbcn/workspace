@@ -5,14 +5,12 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 public  class ThreadCallable{
-
            public static void main(String[] args) {
             //3.创建Callable接口实现类的对象
             NumThread numThread = new NumThread();
             //4.将此Callable接口实现类的对象作为参数传递到FutureTask构造器中，创建FutureTask的对象
             FutureTask futureTask = new FutureTask(numThread);
             new Thread(futureTask).start();
-
         try {
             //get 返回值即为FutureTask构造器参数Callable实现类重写的call()返回值
             Object sum = futureTask.get();

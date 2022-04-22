@@ -7,13 +7,11 @@
  * 
  */
 package com.atguigu.error;
-
 import org.junit.Test;
 
 /*
  * Error：
  *  Java虚拟机无法解决的严重问题如JVM系统内部错误、资源耗尽等严重情况。比如 StactOverflowError
- * 
  *  一般不编写针对性代码进行处理
  *  
  *  
@@ -56,5 +54,7 @@ public class ErrorTest{
 		System.out.println("年后");
 		
 	}
+
+
 
 }

@@ -42,7 +42,6 @@ public class TreeMapTest {
     @Test
     public void test2() {
 
-
 //        Comparator com = new Comparator() {
 //
 //            @Override
@@ -64,8 +63,8 @@ public class TreeMapTest {
                     if (o1 instanceof Person && o2 instanceof Person) {
                         Person p = (Person) o1;
                         Person p0 = (Person) o2;
-                        return Integer.compare(p.getAge(),p0.getAge());
-
+//                        return Integer.compare(p.getAge(),p0.getAge());
+                        return p.getName().compareTo(p0.getName());
                     } else {
                         throw new RuntimeException();
                     }
@@ -76,10 +75,12 @@ public class TreeMapTest {
         Person p2 = new Person("Jerry", 31);
         Person p3 = new Person("Jack", 23);
         Person p4 = new Person("Rose", 21);
+        Person p5 = new Person("Rose", 10);
         map.put(p1, 98);
         map.put(p2, 89);
         map.put(p3, 76);
         map.put(p4, 100);
+        map.put(p5,12);
 
         Set entrySet = map.entrySet();
         Iterator iterator = entrySet.iterator();

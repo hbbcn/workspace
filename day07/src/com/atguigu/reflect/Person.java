@@ -47,6 +47,11 @@ public class Person{
         System.out.println("我的国籍是：" + nation);
         return nation;
     }
+
+    private int test(){
+        System.out.println("int");
+        return 1;
+    }
 }
 
 

@@ -2,6 +2,8 @@ package com.atguigu;
 
 import org.junit.Test;
 
+import java.lang.ref.SoftReference;
+
 /**
  *@ClassName StringBufferBuilder
  *@Description
@@ -33,9 +35,12 @@ public class StringBufferBuilder{
 
         StringBuffer s1 =new StringBuffer("abc");
 
+
+
         s1.append(1);//在结尾加个int类型的1
-        s1.append('1');//在结尾加个字符‘1’；
-        System.out.println(s1);System.out.println(s1.length());
+        StringBuffer buffer = s1.append('1');//在结尾加个字符‘1’；
+        System.out.println(s1 == buffer);System.out.println(s1.length());
+        System.out.println();
         s1.delete(2,4);//删除指定的位置
        // System.out.println(s1);
        // s1.replace(2,4,"hello");//从指定的位置开始和结束替换字符串

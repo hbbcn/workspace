@@ -24,7 +24,7 @@ class Window2 implements Runnable {
             }
         }
 
-        public  synchronized void show(){//有默认的同步监视器：this
+        public synchronized void show(){//有默认的同步监视器：this
             if (ticket > 0) {
                 try {
                     Thread.sleep(100);
@@ -41,7 +41,7 @@ public class WindowTest2 {
 
     public static void main(String[] args) {
         Window2 w1 = new Window2();
-
+        Runnable w = (Runnable)w1;
         Thread t1 = new Thread(w1);
         t1.setName("窗口1");
         Thread t2 = new Thread(w1);

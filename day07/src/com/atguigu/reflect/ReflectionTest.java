@@ -2,6 +2,7 @@ package com.atguigu.reflect;
 
 import org.junit.Test;
 
+import javax.xml.transform.Source;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -23,6 +24,12 @@ import java.util.Set;
  * 来获取此运行时类
  * //获取实例的前三种方式需要掌握
  *
+ *
+ *
+ * 类的加载过程
+ * 1、加载：将class文件字节码内容加载到内存中
+ * 2、链接：默认对int类型变量赋值为0
+ * 3、初始化：当初始化一个类的时候，如果发现父类还没有进行初始化，则需要先触发其父类的初始化
  *
  * Java反射：在Java运行时环境中，对于任意一个类，能否知道这个类有哪些属性和方法？
  * 对于任意一个对象，能否调用它的任意一个方法Java反射机制主要提供了以下功能：
@@ -63,6 +70,9 @@ public class ReflectionTest{
         Class clazz = Person.class;
         //1.通过反射，创建Person类的对象
 //        Object o = clazz.newInstance(); //调用Person空参构造器实例化Person类
+        System.out.println(clazz + "-----");
+        Class<? extends Class> aClass = clazz.getClass();
+        System.out.println(aClass);
 
         Constructor cons = clazz.getConstructor(String.class,int.class);
 
@@ -122,6 +132,21 @@ public class ReflectionTest{
         Person p1 = new Person();
         Class clazz2 = p1.getClass();
         System.out.println(clazz2);
+        Class superclass = clazz2.getSuperclass();
+        System.out.println(superclass);
+        Class<? extends Class> aClass1 = clazz2.getClass().getClass();
+        System.out.println(aClass1);
+        Class<? extends Class> aClass = (Class<? extends Class>) clazz2.getClass().getClass().getClass().getSuperclass();
+        System.out.println(aClass);
+        ClassLoader classLoader1 = clazz1.getClassLoader();
+
+        System.out.println(classLoader1);
+//        String name = classLoader1.getName();
+        ClassLoader parent = classLoader1.getParent();
+
+        System.out.println("<<<<");
+//        System.out.println(name);
+        System.out.println(parent);
 
         //方式三：调用Class的静态方法：forName(String classPath)
         Class clazz3 = Class.forName("com.atguigu.reflect.Person");
@@ -133,6 +158,7 @@ public class ReflectionTest{
         ClassLoader classLoader = ReflectionTest.class.getClassLoader();
         Class clazz4 = classLoader.loadClass("com.atguigu.reflect.Person");
         System.out.println(clazz4);
+
         System.out.println(clazz4 == clazz1);
 
 

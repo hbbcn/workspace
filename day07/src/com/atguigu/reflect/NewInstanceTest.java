@@ -16,6 +16,8 @@ public class NewInstanceTest{
 
     @Test
     public void test1() throws IllegalAccessException, InstantiationException {
+
+
         Class clazz = Person.class;
         /*
         newInstance():调用此方法，创建对应的运行时类的对象。
@@ -28,6 +30,8 @@ public class NewInstanceTest{
         2.便于子类继承运行时类，默认调用super()时，保证父类有此构造器
          */
         Person obj = (Person)clazz.newInstance();
+        System.out.println(obj.getClass().toString());
+        System.out.println();
         System.out.println(obj);
 
     }

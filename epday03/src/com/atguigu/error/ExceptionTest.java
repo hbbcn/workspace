@@ -10,6 +10,7 @@ package com.atguigu.error;
 
 import java.util.Scanner;
 
+
 import org.junit.Test;
 
 /*
@@ -17,29 +18,23 @@ import org.junit.Test;
  *|---- java.lang.Error:一搬不编写针对性代码进行处理
  *|---- java.lang.Exception:可以进行异常处理
  *
- *			|-----编译时异常(checked)
-					|----IOException
-						|--FileNotFoundException
-					|----ClassNotFoundExceptioin
+ *	|-----编译时异常(checked)
+		|----IOException
+			|--FileNotFoundException
+		|----ClassNotFoundExceptioin
                 
- *			|-----运行时异常(unchecked)
+ *	|-----运行时异常(unchecked)
  *
- *					|----NullPointerException
- *					|----ArrayIndexOutOfBoundsException
- *					|----ClassCastException
- *					|----NumberFormatException
- *					|----InputMistmatchException 
- *					|----ArithmeticException
+ *		|----NullPointerException
+ *		|----ArrayIndexOutOfBoundsException
+ *		|----ClassCastException
+ *		|----NumberFormatException
+ *		|----InputMistmatchException
+ *		|----ArithmeticException
  * 
  * 
  */
 public class ExceptionTest {
-
-
-
-
-
-
 
 	/***************以下是运行时异常***************/
 
@@ -57,7 +52,8 @@ public class ExceptionTest {
                   e.printStackTrace();
                   System.out.println("年后");
               }
-          }
+
+		          }
 
 
 

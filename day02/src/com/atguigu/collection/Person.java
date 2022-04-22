@@ -9,7 +9,7 @@ import java.util.Objects;
  *@Date 2021/6/4 18:35
  *@Version 1.0
  */
-public class Person {
+public class Person implements Comparable {
 
     private String name;
     private int age;
@@ -55,24 +55,24 @@ public class Person {
 
 
    //按照姓名从大到下排列，年龄从小到大排列
-//    @Override
-//    public int compareTo(Object o) {
-//
-//        if (o instanceof Person){
-//
-//            Person p = (Person)o;
-//           // return -this.name.compareTo(p.name);
-//            int compare = -this.name.compareTo(p.name);
-//            if (compare != 0){
-//                return compare;
-//            }else{
-//                return Integer.compare(this.age,p.age);
-//            }
-//
-//        }else
-//        {
-//            throw new RuntimeException("输入类型不匹配");
-//        }
-//    }
+    @Override
+    public int compareTo(Object o) {
+
+        if (o instanceof Person){
+
+            Person p = (Person)o;
+           // return -this.name.compareTo(p.name);
+            int compare = -this.name.compareTo(p.name);
+            if (compare != 0){
+                return compare;
+            }else{
+                return Integer.compare(this.age,p.age);
+            }
+
+        }else
+        {
+            throw new RuntimeException("输入类型不匹配");
+        }
+    }
 }
 

@@ -10,8 +10,9 @@ public abstract class Person{
 
     abstract void eat();
 
-    public void test(){
+    public Person test(){
         System.out.println("hello");
+        return null;
     }
 }
 

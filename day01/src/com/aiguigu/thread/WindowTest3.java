@@ -30,12 +30,8 @@ class Window3 extends Thread {
 
     @Override
     public void run() {
-
         while (true) {
-
                 show();
-
-
         }
     }
 

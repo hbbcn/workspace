@@ -3,10 +3,8 @@ package com.atguigu.map;
 import org.junit.Test;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  *@ClassName CollectionsTest
@@ -29,6 +27,7 @@ public class CollectionsTest{
         list.add(0);
         list.add(145);
         list.add(190);
+//        list.add("tom");
         System.out.println(list);
 
         //Collections.reverse(List)
@@ -40,7 +39,6 @@ public class CollectionsTest{
 
         //sort(List):根据元素的自然排序对指定的List集合元素按升序排序
         //sort(List,Comparator):根据指定的Comparator 产生的顺序对List集合元素进行排序
-
         Collections.sort(list);
         System.out.println(list);
 

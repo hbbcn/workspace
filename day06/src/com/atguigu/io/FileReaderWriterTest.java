@@ -12,7 +12,7 @@ import java.io.*;
  * 2.数据的流向：输入流、输出流
  * 3.流的角色：节点流、处理流
  * 二、流的体系结构
- * 抽象基类                 节点流                                                    缓冲流（处理流的一种）
+ * 抽象基类                 节点流/字符流                                                    缓冲流（处理流的一种）
  * InputStream              FileInputStream  (reade(byte[] buffer))                  BufferedInputStream (read(byte[] buffer))
  * OutputStream             FileOutputStream  (write(byte[] buffer,0,len)            BufferedOutputStream (write(byte[] buffer,0,len)) /flush
  * Reader                   FileReader  (read(char[] cbuf))                          BufferedReader (read(char[] cbuf) /readLine())
@@ -52,10 +52,13 @@ public class FileReaderWriterTest {
 //            System.out.print((char)read);
 //
 //        }
+            System.out.println(">>>>>>>>>>>");
             //优化
             int data;
             while ((data = fr.read()) != -1) {
+//                System.out.print(data);
                 System.out.print((char)data);
+
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,12 +82,14 @@ public class FileReaderWriterTest {
 
         byte[] buffer = new byte[5];
         int len;
-        while((len = fs.read()) != -1){
-            System.out.println((char)len);
-
+//        System.out.println(fs.read());
+        while ((len = fs.read(buffer)) != -1){
+            String s = new String(buffer, 0, len);
+            System.out.print(s);
         }
-
-
+  /*      while((len = fs.read()) != -1){
+            System.out.print(len);
+        }*/
     }
 
 
@@ -156,7 +161,40 @@ public class FileReaderWriterTest {
     }
 
     @Test
-    public void testFileReaderWriter() {
+    public void testFileReaderWriter()  {
+
+        File file = new File("file.txt");
+        File outPut = new File("output.txt");
+        FileReader fileReader = null;
+        FileWriter fileWriter = null;
+        try {
+            fileReader = new FileReader(file);
+             fileWriter = new FileWriter(outPut);
+            char[] chars = new char[1];
+            int length;
+            while ((length = fileReader.read(chars)) != -1){
+                fileWriter.write(chars,0,length);
+                String s = chars.toString();
+                int ints = Integer.valueOf(s);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                fileReader.close();
+                fileWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+
+
+
+
+
+
         FileReader fr = null;
         FileWriter fw = null;
         try {

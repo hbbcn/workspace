@@ -4,10 +4,7 @@ import com.atguigu.collection.Person;
 import org.junit.Test;
 
 import javax.xml.transform.Source;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  *@ClassName ListTest
@@ -66,7 +63,7 @@ import java.util.List;
 ArrayList:线程不安全的两个原因
 们先来看看 ArrayList 的 add 操作源码。
   public boolean add(E e) {
-        ensureCapacityInternal(size + 1);
+        ensureCapacityInternal(size  + 1);
         elementData[size++] = e;
         return true;
     }
@@ -115,15 +112,32 @@ ArrayList适合于进行大量的随机访问的情况下使用，LinkedList适�
  */
 public class ListTest{
 
+
     @Test
     public void test1(){
         ArrayList list = new ArrayList();
+
+        list.remove("AA");
+
+
         list.add(123);
         list.add(456);
         list.add("AA");
         list.add(new Person("Tom",12));
         list.add(456);
+
+        //错误删除
+        for (Object obj : list) {
+            System.out.println(obj);
+            list.remove(obj);
+        }
+        for (Iterator it = list.iterator(); it.hasNext(); ) {
+            it.next();
+            it.remove();
+        }
+
         System.out.println(list);
+       /* System.out.println(list);
 
         //void add(int index, Object ele):在index位置插入ele元素
         list.add(1,"BB");
@@ -144,7 +158,7 @@ public class ListTest{
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
-        System.out.println("*****************");
+        System.out.println("*****************");*/
 
 
     }
@@ -158,6 +172,8 @@ public class ListTest{
         list.add("AA");
         list.add(new Person("Tom",12));
         list.add(456);
+
+
         System.out.println(list);
 
         //indexOf(Object obj):返回obj在集合中首次出现的位置，如果不存在返回-1.

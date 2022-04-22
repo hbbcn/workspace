@@ -1,4 +1,7 @@
 package edu.sias.gitee;
+
+import java.util.Scanner;
+
 /**
  *@ClassName Test1
  *@Description  TODO
@@ -7,8 +10,39 @@ package edu.sias.gitee;
  *@Version 1.0
  */
 public class Test1{
+
+   double d = 5.2;
     public static void main(String[] args) {
-        System.out.println("hello gitee");
+
     }
+
+   protected void testProtect(){
+
+   }
+
+   public void testPublic(){}
+
+
+   private void testPrivate(){
+
+   }
+
+   public void Test1(){
+
+   }
+
 }
+
+
+class AA{
+
+    public static void main(String[] args) {
+        Test1 test1 = new Test1();
+        test1.testProtect();
+    }
+
+}
+
+
+
 

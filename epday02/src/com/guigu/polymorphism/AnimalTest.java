@@ -16,14 +16,11 @@ public class AnimalTest {
 	public static void main(String[] args) {
 		
 		AnimalTest test = new AnimalTest();
-		
 		test.func(new Dog());
-		
 		test.func(new Cat());
-
 		Animal dog = new Dog();
-		Animal a = (Animal)dog;
 
+		Animal a = (Animal)dog;
 //		Dog dog1 = (Dog) dog;
 //		dog1.
 	}
@@ -68,9 +65,7 @@ class Dog extends Animal{
 	
 		System.out.println("汪！汪！汪！");
 	}
-
 	public void run(){
-
 	}
 }
 

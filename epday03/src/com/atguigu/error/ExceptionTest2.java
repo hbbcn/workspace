@@ -13,6 +13,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.hamcrest.Condition;
 import org.junit.Test;
 
 public class ExceptionTest2 {
@@ -45,17 +46,16 @@ public class ExceptionTest2 {
 				e.printStackTrace();
 			}
 		}
-		
+
 		System.out.println("niao ");
 	}
 
 	@Test
-	public void test1(){
+	public void test1() throws Exception {
 
-	int[] arr = new int[]{123};
-		System.out.println(arr[2]);
-
-
+		String[][] arr = new String[10][];
+		String[] arr1 = new String[2];
+		String[] arr2 = {"2", "3"};
 	}
 	
 }

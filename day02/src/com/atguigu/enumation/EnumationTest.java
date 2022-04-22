@@ -33,9 +33,6 @@ public class EnumationTest{
     public static void main(String[] args) {
         Season autumn = Season.AUTUMN;
         System.out.println(autumn);
-
-
-
     }
 
 }
@@ -52,8 +49,6 @@ class Season{
     private Season(String seasonName,String seansonDesc){
         this.seasonName = seasonName;
         this.seansonDesc = seansonDesc;
-
-
     }
 
     //3.提供当前枚举类的多个对象

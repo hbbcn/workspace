@@ -35,11 +35,19 @@ public class TreeSetTest{
 //        set.add(43);
 //        set.add(8);
 
+//        Comparator comparator = new Comparator() {
+//            @Override
+//            public int compare(Object o1, Object o2) {
+//                int x = (int)o1;
+//                int y = (int)o2;
+//                return -Integer.compare(x,y);
+//            }
+//        };
         //举例2
-        set.add(new Person("Tom",12));
-        set.add(new Person("Jerry",12));
-        set.add(new Person("Jim",12));
-        set.add(new Person("Jack",12));
+        set.add(new Person("Tom",16));
+        set.add(new Person("Kerry",12));
+        set.add(new Person("Jim",14));
+        set.add(new Person("Aack",12));
         set.add(new Person("Jack",56));
 
         Iterator iterator = set.iterator();
@@ -69,7 +77,6 @@ public class TreeSetTest{
                }
             }
 
-
         };
 
 
@@ -81,7 +88,6 @@ public class TreeSetTest{
         set.add(new Person("Zack",56));
         set.add(new Person("Zack",57));
         set.add(new Person("Zack",53));
-
 
         Iterator iterator = set.iterator();
         while (iterator.hasNext()){

@@ -46,6 +46,7 @@ public class StirngTest{
 
         String s1 = "abc";//字面量的定义方式
         String s2 = "abc";
+        System.out.println(s1);
         System.out.println(s1==s2);//true
         s1 = "hello";
 

@@ -2,10 +2,7 @@ package com.atguigu.io;
 
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 /**
  *@ClassName FileInputOutputStreamTest
@@ -30,12 +27,16 @@ public class FileInputOutputStreamTest{
             //造流
             fis = new FileInputStream(file);
             //3.读数据
-            byte[] buffer = new byte[1];
+            byte[] buffer = new byte[30];
             int len;//记录每次读取的字节个数
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
             while((len = fis.read(buffer)) != -1){
-                String str = new String(buffer,0,len);
-                System.out.print(str);
+//                String str = new String(buffer,0,len);
+                baos.write(buffer);
+//                System.out.print(str);
             }
+            String s = baos.toString();
+            System.out.println(s);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -51,4 +52,5 @@ public class FileInputOutputStreamTest{
 
     }
 }
+
 

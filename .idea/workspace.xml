@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bbb116b9-e90c-4616-bed3-150acf135ec0" name="Default Changelist" comment="Java基础">
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/StaticFactory/AuDi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/StaticFactory/BaoMa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/StaticFactory/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/StaticFactory/CarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/StaticFactory/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/HuaWeiPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/HuaWeiRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/IProductFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/IRouterProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/IphoneProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/XiaoMiRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/XiaomiPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/huawei/XiaoMiFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/abstract1/xiaomi/HuaWeiFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/CarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/Mobai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/MobaiFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/Tesla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/TeslaFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/WuLing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method/WuLingFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method_test01/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method_test01/CarFactory01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method_test01/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method_test01/HuaWeiFactory02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method_test01/Huawei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method_test01/XiaoMi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/method_test01/XiaoMiFactory01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/simple/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/simple/CarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/simple/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/simple/DaZhong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/simple/Tesla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/factory/simple/WuLing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/CurrentConditions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/WeatherData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/CurrentConditions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/Observe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/WeatherData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/proxy/DynamicProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/proxy/StaticProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type1/SingletonTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type3/SingletonTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type4/SingletonTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type6/SingletonTest06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type7/SingletonTest07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type8/SingletonTest08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/PeckingDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/ToyDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/WildDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/BadFlyBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/FlyBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/GoodFlyBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/NoFlyBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/PeckingDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/ToyDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/WildDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/策略模式.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Constructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Main01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Solution01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/T.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/Test05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/com/test/tryDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/lock/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/lock/WhatReentrant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewCachedThreadPoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewFixedThreadPoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewScheduledThreadPoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewSingleThreadExecutorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/threadexer/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/com/atguigu/settest/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/src/com/atguigu/datastream/DataStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/src/com/atguigu/io/FileOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/src/com/atguigu/iotest/FileInOutputTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/src/com/atguigu/iotest/FileReadWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/src/com/atguigu/objectStream/ObjectOutPutStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/src/com/atguigu/objectStream/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07/src/com/atguigu/JVM/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07/src/com/atguigu/Proxy/DynamicProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07/src/com/atguigu/Proxy/StaticProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07/src/com/atguigu/Proxy/StaticProxy01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/InvokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/enum01/Enum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/AA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/BB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/LambdaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/LambdaTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/Man.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/Man01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/java8/StreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/serializable/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/src/com/atguigu/serializable/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/my/MyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/my/MyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/my02/MyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/my02/MyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/my03/MyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/my03/MyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/my03/SimpleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/swing/MyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/swing/MyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/swing/SwingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/swing/SwingTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/swing/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/AA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/BB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/CC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/DD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/Java_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/MyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/MyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/test01/FeignHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test/test01/Hystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test02/AA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/src/com/atguigu/test02/my.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday02/src/com/atguigu/abtract/NIMingExer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/sort/bubble/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/sort/bubble/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/sort/bubble/B1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/sort/bubble/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/sort/bubble/TestB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/test01/A1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/test01/AA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/test01/BB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/test01/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/test01/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/epday03/src/com/test/test01/X.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/T.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/TestGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee02/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee02/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee02/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee02/Thread4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/newke/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/newke/Stu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/written_practice/src/com/cn/test/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/exer/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/exer/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/lock/LockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/lock/LockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadCallable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/com/atguigu/collection/IteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/com/atguigu/collection/IteratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/com/atguigu/collection/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/com/atguigu/collection/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/com/atguigu/enumation/EnumationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/com/atguigu/enumation/EnumationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/com/atguigu/enumation/Season1Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/com/atguigu/enumation/Season1Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/com/atguigu/listtest/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/com/atguigu/listtest/ListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/com/atguigu/settest/SetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/com/atguigu/settest/SetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/com/atguigu/settest/TreeSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/src/com/atguigu/settest/TreeSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/com/atguigu/DateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/com/atguigu/DateTimeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/com/atguigu/StirngTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/com/atguigu/StirngTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/com/atguigu/StringBufferBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/com/atguigu/StringBufferBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/com/atguigu/StringMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/com/atguigu/StringMethodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/src/com/atguigu/StringTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/src/com/atguigu/StringTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/src/com/atguigu/map/CollectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/src/com/atguigu/map/CollectionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/src/com/atguigu/map/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/src/com/atguigu/map/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/src/com/atguigu/map/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/src/com/atguigu/map/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/src/com/atguigu/map/TreeMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/src/com/atguigu/map/TreeMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05/src/com/atguigu/generic/GenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day05/src/com/atguigu/generic/GenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day06/hello.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/hello2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day06/hello2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/src/com/atguigu/files/FileCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/day06/src/com/atguigu/files/FileCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/src/com/atguigu/io/FileInputOutputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day06/src/com/atguigu/io/FileInputOutputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/src/com/atguigu/io/FileReaderWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day06/src/com/atguigu/io/FileReaderWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/src/com/atguigu/io/InputStreamReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day06/src/com/atguigu/io/InputStreamReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/src/com/atguigu/io/RandomAccessFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day06/src/com/atguigu/io/RandomAccessFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/src/com/atguigu/io/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/day06/src/com/atguigu/io/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/src/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day06/src/hello.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day07/src/com/atguigu/Proxy/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day07/src/com/atguigu/Proxy/ProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day07/src/com/atguigu/Proxy/StaticProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day07/src/com/atguigu/Proxy/StaticProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/ClassLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/ClassLoaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/NewInstanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/NewInstanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day07/src/com/atguigu/reflect/ReflectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday02/src/com/atguigu/abtract/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday02/src/com/atguigu/abtract/AbstractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday02/src/com/atguigu/abtract/niming.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday02/src/com/atguigu/abtract/niming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday02/src/com/atguigu/inferface/inferface.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday02/src/com/atguigu/inferface/inferface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday02/src/com/guigu/extend/ExtendTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday02/src/com/guigu/extend/ExtendTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday02/src/com/guigu/polymorphism/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday02/src/com/guigu/polymorphism/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ErrorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ErrorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday03/src/com/atguigu/myexception/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday03/src/com/atguigu/myexception/MyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epday03/src/com/atguigu/throwstest/ThrowsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/epday03/src/com/atguigu/throwstest/ThrowsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/strategy.cld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/written_practice/src/com/cn/listcode/ListNodeTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/written_practice/src/com/cn/listcode/ListNodeTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/written_practice/src/com/cn/test/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/written_practice/src/com/cn/test/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/written_practice/src/com/cn/test/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/written_practice/src/com/cn/test/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/易错点" beforeDir="false" afterPath="$PROJECT_DIR$/易错点" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/知识点" beforeDir="false" afterPath="$PROJECT_DIR$/知识点" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/知识点02" beforeDir="false" afterPath="$PROJECT_DIR$/知识点02" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/workspace$SingletonTest03__1_.ic" NAME="SingletonTest03 (1) Coverage Results" MODIFIED="1649154018194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.hbb.singleton.type6.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/workspace$A2.ic" NAME="A2 Coverage Results" MODIFIED="1643282523655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.test.test01.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/workspace$ClassLoaderTest_test0.ic" NAME="ClassLoaderTest.test0 Coverage Results" MODIFIED="1625631858854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.atguigu.reflect.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/workspace$Test05_test03.ic" NAME="Test05.test03 Coverage Results" MODIFIED="1649678696061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.test.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DependenciesAnalyzeManager">
+    <option name="forwardDirection" value="false" />
+    <option name="includeTests" value="true" />
+  </component>
+  <component name="DsmViewSettings">
+    <option name="flattenPackages" value="true" />
+    <option name="groupByModules" value="false" />
+    <option name="groupCycles" value="true" />
+    <option name="useGradient" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="workspace" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/TreeMapTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1920">
+              <caret line="66" column="52" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/CollectionsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="40" column="66" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/MapExer1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/MapTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4980">
+              <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day02/src/com/atguigu/listtest/ListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2762">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Comparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2400">
+              <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Set.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3960">
+              <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Objects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2970">
+              <caret line="132" column="27" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
+              <folding>
+                <element signature="e#4172#4173#0" expanded="true" />
+                <element signature="e#4218#4219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Arrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131610">
+              <caret line="4490" column="22" selection-start-line="4490" selection-start-column="22" selection-end-line="4490" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>comparator</find>
+      <find>toString</find>
+      <find>compareTo</find>
+      <find>get</find>
+      <find>noti</find>
+      <find>index</find>
+      <find>ComparaTo</find>
+      <find>CompareTo</find>
+      <find>Compare</find>
+      <find>clone</find>
+      <find>state</find>
+      <find>state\</find>
+      <find>SpinLock</find>
+      <find>compareAndSet</find>
+      <find>Proxy</find>
+      <find>Native</find>
+      <find>Runnable</find>
+      <find>future</find>
+      <find>start</find>
+      <find>r</find>
+      <find>FutureTask</find>
+      <find>Callable</find>
+      <find>target</find>
+      <find>Executor</find>
+      <find>Executors</find>
+      <find>ExecutorService</find>
+      <find>run</find>
+      <find>Future</find>
+      <find>Comparators</find>
+      <find>Comparator</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SORT_ALPHABETICALLY" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/exer1/Circle.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday01/src/com/atguigu/java/PersonTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/exer1/GeometricObject.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day03/src/com/atguigu/DateTimeTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day03/src/com/atguigu/test.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/Proxy/StaticProxyTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday03/src/com/sort/bubble/SortBubble.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/Proxy/ProxyTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/exer/AccountTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/exer/ProductTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/hello2.txt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/hello.txt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/supertest/Student.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/reflect/ClassLoaderTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/reflect/ReflectionTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/reflect/NewInstanceTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/reflect/Person.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/lock/LockTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/hello.txt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/settest/SetTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/settest/TreeSetTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday03/src/com/atguigu/exer/YangHui.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/internet/TCPTest3.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/internet/internetAddressTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/internet/TCPTest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/internet/UDPTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/com/atguigu/io/BufferedTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/com/atguigu/io/FileReaderWriterTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/com/atguigu/io/InputStreamReaderTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/com/atguigu/io/RandomAccessFileTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/myexer/MyTheadExer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/myexer/Windows1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/myexer/Windows.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/myexer/Windows2.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/extendexer1/Cylinder.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday03/src/com/atguigu/array/ArrayDmeo1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/com/atguigu/io/OtherStreamTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/objectstream/ObjectOutputStreamTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/extendexer1/Circle.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/com/atguigu/io/FileInputOutputStreamTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day07/src/com/atguigu/objectstream/Person.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday03/src/com/atguigu/error/exer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/com/atguigu/io/PicTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest2.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/enumation/EnumationTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowTest2.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/polymorphism/AnimalTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadCallable.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/polymorphism/PersonTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadMethod.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/guigu/polymorphism/Person.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadPool.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/Singletontest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowTest3.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadTest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/annotation/AnnotationTest.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/threadexer/ThreadDemo.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/collection/ForTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/collection/IteratorTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/collection/CollectionTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/collection/Person.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/exer/MyStack.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/exer/ListNode.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/exer/Exer1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day06/src/exer/LockObject.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/exer/Exer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/exer/Person.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/exer/Exer1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/file/FileTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/GenericTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/Student.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/Order.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/DAO.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/GenericTest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/GenericTest3.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/SubOrder.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day05/src/com/atguigu/generic/SubOrder1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/atguigu/block/BlockTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/atguigu/exer1/Circle.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/atguigu/equals/Customer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/atguigu/equals/equals.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/atguigu/abtract/AbstractTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday01/src/com/java/test/Test1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday03/src/com/atguigu/error/ExceptionTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/atguigu/abtract/Exer1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day03/src/com/atguigu/StringTest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day03/src/com/atguigu/StirngTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day03/src/com/atguigu/StringBufferBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday02/src/com/atguigu/inferface/inferface.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/CollectionsTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/MapExer1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/PropertiesrTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/epday01/src/com/sias/exer/StudentTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/Person.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/written_practice/src/com/cn/math/Hanoi.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/written_practice/src/com/cn/math/Factorial.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowsTest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/TreeMapTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day02/src/com/atguigu/listtest/ListTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/written_practice/src/com/cn/listcode/exer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/MapTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/written_practice/src/com/cn/listcode/ListNode.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/written_practice/src/com/cn/listcode/ListNodeTest1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/written_practice/src/com/cn/listcode/Exer1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/testtogitee/src/edu/sias/gitee/Test1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day03/src/com/atguigu/StringMethodTest.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/Subject.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/Client.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/observe/improve/WeatherData.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/Duck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/WildDuck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/PeckingDuck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/ToyDuck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/Client.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/FlyBehavior.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/GoodFlyBehavior.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/BadFlyBehavior.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/NoFlyBehavior.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/WildDuck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/ToyDuck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/PeckingDuck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/Duck.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/Client.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/Strategy.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type1/SingletonTest01.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type3/SingletonTest03.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type4/SingletonTest03.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type6/SingletonTest03.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type6/SingletonTest06.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type7/SingletonTest06.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type7/SingletonTest07.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/singleton/type8/SingletonTest08.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/proxy/StaticProxy.java" />
+        <option value="$PROJECT_DIR$/GoF23/src/com/hbb/proxy/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/day06/src/com/atguigu/io/BufferedTest.java" />
+        <option value="$PROJECT_DIR$/day06/src/hello.txt" />
+        <option value="$PROJECT_DIR$/day06/src/com/atguigu/io/FileReaderWriterTest.java" />
+        <option value="$PROJECT_DIR$/day06/hello.txt" />
+        <option value="$PROJECT_DIR$/day06/src/com/atguigu/io/FileInputOutputStreamTest.java" />
+        <option value="$PROJECT_DIR$/day06/src/com/atguigu/iotest/FileInOutputTest.java" />
+        <option value="$PROJECT_DIR$/day06/src/com/atguigu/iotest/FileReadWrite.java" />
+        <option value="$PROJECT_DIR$/Test/src/com/test/TyrDemo.java" />
+        <option value="$PROJECT_DIR$/Test/src/com/test/tryDemo.java" />
+        <option value="$PROJECT_DIR$/Test/src/com/test/Test05.java" />
+        <option value="$PROJECT_DIR$/Test/src/com/test/A.java" />
+        <option value="$PROJECT_DIR$/Test/src/com/test/Test01.java" />
+        <option value="$PROJECT_DIR$/Test/src/com/test/Main.java" />
+        <option value="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadMethod.java" />
+        <option value="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadTest.java" />
+        <option value="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewCachedThreadPoolTest.java" />
+        <option value="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewFixedThreadPoolTest.java" />
+        <option value="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewScheduledThreadPoolTest.java" />
+        <option value="$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewSingleThreadExecutorTest.java" />
+        <option value="$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadPool.java" />
+        <option value="$PROJECT_DIR$/day04/src/com/atguigu/map/TreeMapTest.java" />
+        <option value="$PROJECT_DIR$/day04/src/com/atguigu/map/Person.java" />
+        <option value="$PROJECT_DIR$/day04/src/com/atguigu/map/CollectionsTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/java_install/maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\java_install\maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="346" />
+    <option name="y" value="41" />
+    <option name="width" value="1240" />
+    <option name="height" value="1005" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <showMembers ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
+      <abbreviatePackageNames ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1650473240734" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="D:/javaWork/JavaWeb" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA_javacode\workspace\GoF23\src\com\hbb\strategy" />
+      <recent name="D:\IDEA_javacode\workspace\day06" />
+      <recent name="D:\IDEA_javacode\workspace\day03\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hbb.observe.improve" />
+      <recent name="com.hbb.factory.abstract1" />
+      <recent name="com.atguigu.exer" />
+      <recent name="com.atguigu.map" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA_javacode\workspace\GoF23\src\com\hbb\proxy" />
+      <recent name="D:\IDEA_javacode\workspace\GoF23\src\com\hbb\singleton\type7" />
+      <recent name="D:\IDEA_javacode\workspace\GoF23\src\com\hbb\singleton\type6" />
+      <recent name="D:\IDEA_javacode\workspace\GoF23\src\com\hbb\singleton\type4" />
+      <recent name="D:\IDEA_javacode\workspace\GoF23\src\com\hbb\strategy\improve" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ListTest.test">
+    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.map.Person" />
+      <module name="day04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionsTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.map" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.map.CollectionsTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.listtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.listtest" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.listtest.ListTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeMapTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.map" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.map.TreeMapTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeMapTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.map" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.map.TreeMapTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ListTest.test" />
+        <item itemvalue="JUnit.CollectionsTest.test1" />
+        <item itemvalue="JUnit.TreeMapTest.test2" />
+        <item itemvalue="Application.Person" />
+        <item itemvalue="JUnit.TreeMapTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_NON_PUBLIC" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbb116b9-e90c-4616-bed3-150acf135ec0" name="Default Changelist" comment="" />
+      <created>1624006283398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624006283398</updated>
+      <workItem from="1624006286111" duration="14639000" />
+      <workItem from="1624025443988" duration="4766000" />
+      <workItem from="1624067536744" duration="13902000" />
+      <workItem from="1624169333185" duration="11446000" />
+      <workItem from="1624244657758" duration="48266000" />
+      <workItem from="1624409381940" duration="3519000" />
+      <workItem from="1624415905293" duration="21423000" />
+      <workItem from="1624497029016" duration="4124000" />
+      <workItem from="1624502726739" duration="59312000" />
+      <workItem from="1624746698622" duration="26427000" />
+      <workItem from="1624805399933" duration="2620000" />
+      <workItem from="1624855784720" duration="17748000" />
+      <workItem from="1624938304507" duration="853000" />
+      <workItem from="1624970923118" duration="6822000" />
+      <workItem from="1625128760176" duration="2879000" />
+      <workItem from="1625327134387" duration="4000" />
+      <workItem from="1625386401290" duration="933000" />
+      <workItem from="1625397836951" duration="1459000" />
+      <workItem from="1625452578863" duration="1327000" />
+      <workItem from="1625456318676" duration="1276000" />
+      <workItem from="1625457686008" duration="6994000" />
+      <workItem from="1625558065770" duration="40739000" />
+      <workItem from="1625814489454" duration="21422000" />
+      <workItem from="1625907266810" duration="1781000" />
+      <workItem from="1625919329609" duration="5332000" />
+      <workItem from="1625976878414" duration="223000" />
+      <workItem from="1626067886703" duration="4326000" />
+      <workItem from="1626243452939" duration="4083000" />
+      <workItem from="1626248689119" duration="33000" />
+      <workItem from="1626248741106" duration="57000" />
+      <workItem from="1626248836098" duration="38000" />
+      <workItem from="1626248963124" duration="873000" />
+      <workItem from="1626312055887" duration="3978000" />
+      <workItem from="1626333321918" duration="31000" />
+      <workItem from="1626399138939" duration="22325000" />
+      <workItem from="1626431606007" duration="4286000" />
+      <workItem from="1626482056041" duration="6020000" />
+      <workItem from="1626514796953" duration="221000" />
+      <workItem from="1626515175081" duration="3128000" />
+      <workItem from="1626593362643" duration="4114000" />
+      <workItem from="1626656022911" duration="30000" />
+      <workItem from="1626695520998" duration="692000" />
+      <workItem from="1626748132199" duration="598000" />
+      <workItem from="1626868526288" duration="748000" />
+      <workItem from="1626920043746" duration="4695000" />
+      <workItem from="1627095022537" duration="746000" />
+      <workItem from="1627176330648" duration="598000" />
+      <workItem from="1627188894496" duration="23000" />
+      <workItem from="1627188924114" duration="3000" />
+      <workItem from="1627188944038" duration="9000" />
+      <workItem from="1627189008810" duration="2185000" />
+      <workItem from="1627207161674" duration="11000" />
+      <workItem from="1627348781768" duration="7420000" />
+      <workItem from="1627390985835" duration="1480000" />
+      <workItem from="1627394784907" duration="1235000" />
+      <workItem from="1627434977078" duration="5602000" />
+      <workItem from="1627520395486" duration="16000" />
+      <workItem from="1627524536440" duration="1957000" />
+      <workItem from="1627536054517" duration="1197000" />
+      <workItem from="1627568583852" duration="46000" />
+      <workItem from="1627712899049" duration="3417000" />
+      <workItem from="1627740769953" duration="621000" />
+      <workItem from="1627780884487" duration="487000" />
+      <workItem from="1627901673478" duration="1269000" />
+      <workItem from="1627909992936" duration="14000" />
+      <workItem from="1628480161108" duration="4272000" />
+      <workItem from="1628518016664" duration="597000" />
+      <workItem from="1628518931157" duration="107000" />
+      <workItem from="1629711623420" duration="921000" />
+      <workItem from="1629712638753" duration="713000" />
+      <workItem from="1630668718370" duration="12849000" />
+      <workItem from="1630716849335" duration="10838000" />
+      <workItem from="1630746811700" duration="12807000" />
+      <workItem from="1630808521209" duration="20998000" />
+      <workItem from="1630900816969" duration="35406000" />
+      <workItem from="1631427861098" duration="22120000" />
+      <workItem from="1631764004827" duration="201000" />
+      <workItem from="1631796186813" duration="214000" />
+      <workItem from="1631798739288" duration="599000" />
+      <workItem from="1631955130129" duration="195000" />
+      <workItem from="1632450706970" duration="17128000" />
+      <workItem from="1632539514398" duration="10146000" />
+      <workItem from="1632570271967" duration="5604000" />
+      <workItem from="1632618585290" duration="2071000" />
+      <workItem from="1632650137086" duration="3062000" />
+      <workItem from="1632896250370" duration="8569000" />
+      <workItem from="1632962780485" duration="11108000" />
+      <workItem from="1633049731141" duration="32000" />
+      <workItem from="1633179887672" duration="2833000" />
+      <workItem from="1633250952013" duration="1759000" />
+      <workItem from="1633416587864" duration="845000" />
+      <workItem from="1633762307579" duration="2853000" />
+      <workItem from="1633922002284" duration="636000" />
+      <workItem from="1633954897031" duration="596000" />
+      <workItem from="1633997402276" duration="1191000" />
+      <workItem from="1634085925921" duration="1312000" />
+      <workItem from="1634118309678" duration="8655000" />
+      <workItem from="1634170669588" duration="1083000" />
+      <workItem from="1634298441211" duration="730000" />
+      <workItem from="1634343029764" duration="3562000" />
+      <workItem from="1634397139917" duration="748000" />
+      <workItem from="1634549942809" duration="7978000" />
+      <workItem from="1634609514595" duration="3089000" />
+      <workItem from="1634891128170" duration="2125000" />
+      <workItem from="1634989796618" duration="36857000" />
+      <workItem from="1635135706614" duration="6858000" />
+      <workItem from="1635157885588" duration="599000" />
+      <workItem from="1635165742343" duration="595000" />
+      <workItem from="1636368382482" duration="2282000" />
+      <workItem from="1636423876056" duration="41000" />
+      <workItem from="1636526105751" duration="8852000" />
+      <workItem from="1636555378762" duration="2113000" />
+      <workItem from="1636595435140" duration="8072000" />
+      <workItem from="1636617297301" duration="1484000" />
+      <workItem from="1636634737122" duration="624000" />
+      <workItem from="1636855418752" duration="2500000" />
+      <workItem from="1636879809082" duration="3225000" />
+      <workItem from="1636943380271" duration="5142000" />
+      <workItem from="1637247054301" duration="1020000" />
+      <workItem from="1637285025687" duration="1275000" />
+      <workItem from="1637328261204" duration="625000" />
+      <workItem from="1637546462906" duration="31604000" />
+      <workItem from="1637643719275" duration="3928000" />
+      <workItem from="1637653641805" duration="19383000" />
+      <workItem from="1637768369775" duration="937000" />
+      <workItem from="1638259071883" duration="12020000" />
+      <workItem from="1638513048990" duration="29000" />
+      <workItem from="1638533214564" duration="14734000" />
+      <workItem from="1638612967016" duration="207000" />
+      <workItem from="1638613200415" duration="4550000" />
+      <workItem from="1639656988721" duration="896000" />
+      <workItem from="1640092923376" duration="7263000" />
+      <workItem from="1640261120751" duration="8140000" />
+      <workItem from="1640515093803" duration="2754000" />
+      <workItem from="1640673554016" duration="223000" />
+      <workItem from="1640682506205" duration="6241000" />
+      <workItem from="1641541337574" duration="24349000" />
+      <workItem from="1641890910808" duration="5106000" />
+      <workItem from="1642223934606" duration="38315000" />
+      <workItem from="1642999816987" duration="2643000" />
+      <workItem from="1643079153576" duration="16344000" />
+      <workItem from="1643281935174" duration="7999000" />
+      <workItem from="1643511631107" duration="19319000" />
+      <workItem from="1644138786630" duration="616000" />
+      <workItem from="1644246930800" duration="4787000" />
+      <workItem from="1644467918570" duration="892000" />
+      <workItem from="1644477001117" duration="597000" />
+      <workItem from="1644486856439" duration="597000" />
+      <workItem from="1644502611529" duration="907000" />
+      <workItem from="1644542308329" duration="1097000" />
+      <workItem from="1644590183446" duration="916000" />
+      <workItem from="1644991666036" duration="2089000" />
+      <workItem from="1644999864718" duration="1875000" />
+      <workItem from="1645019900414" duration="860000" />
+      <workItem from="1645455144471" duration="3921000" />
+      <workItem from="1645681892915" duration="3505000" />
+      <workItem from="1645751560229" duration="2299000" />
+      <workItem from="1645783220299" duration="1952000" />
+      <workItem from="1646009077265" duration="5230000" />
+      <workItem from="1646229096599" duration="4069000" />
+      <workItem from="1646281885920" duration="5554000" />
+      <workItem from="1646389040213" duration="8561000" />
+      <workItem from="1646550859230" duration="19000" />
+      <workItem from="1646550887259" duration="133000" />
+      <workItem from="1646551039132" duration="2000" />
+      <workItem from="1646551057991" duration="2634000" />
+      <workItem from="1646645575641" duration="106000" />
+      <workItem from="1646744870682" duration="4606000" />
+      <workItem from="1646899549377" duration="1251000" />
+      <workItem from="1647147542092" duration="1233000" />
+      <workItem from="1647148891622" duration="5009000" />
+      <workItem from="1647180960352" duration="1878000" />
+      <workItem from="1647342358374" duration="4362000" />
+      <workItem from="1647392520377" duration="3120000" />
+      <workItem from="1647478899484" duration="1217000" />
+      <workItem from="1647674393632" duration="608000" />
+      <workItem from="1647747604005" duration="31351000" />
+      <workItem from="1647948746267" duration="3000" />
+      <workItem from="1647948760690" duration="14000" />
+      <workItem from="1647948788063" duration="2000" />
+      <workItem from="1647948878200" duration="24934000" />
+      <workItem from="1648613384729" duration="29407000" />
+      <workItem from="1648816133742" duration="76000" />
+      <workItem from="1648816254386" duration="8520000" />
+      <workItem from="1649139628929" duration="44436000" />
+      <workItem from="1649420143464" duration="6463000" />
+      <workItem from="1649741936216" duration="1807000" />
+      <workItem from="1649817869942" duration="4249000" />
+      <workItem from="1650011974260" duration="5968000" />
+      <workItem from="1650209376629" duration="638000" />
+      <workItem from="1650257786744" duration="5023000" />
+      <workItem from="1650363407337" duration="4880000" />
+      <workItem from="1650520772739" duration="665000" />
+      <workItem from="1650535972411" duration="619000" />
+    </task>
+    <task id="LOCAL-00001" summary="java基础练习">
+      <created>1624523324372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624523324372</updated>
+    </task>
+    <task id="LOCAL-00002" summary="测试IDEA项目到gitee">
+      <created>1624545445593</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624545445593</updated>
+    </task>
+    <task id="LOCAL-00003" summary="java基础io流和反射">
+      <created>1624872443435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624872443435</updated>
+    </task>
+    <task id="LOCAL-00004" summary="java基础io流和反射">
+      <created>1624873772994</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624873772994</updated>
+    </task>
+    <task id="LOCAL-00005" summary="动态代理">
+      <created>1624938603336</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624938603337</updated>
+    </task>
+    <task id="LOCAL-00006" summary="单链表">
+      <created>1625456597924</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625456597925</updated>
+    </task>
+    <task id="LOCAL-00007" summary="单链表">
+      <created>1625456716393</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625456716393</updated>
+    </task>
+    <task id="LOCAL-00008" summary="单链表">
+      <created>1625456823257</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1625456823257</updated>
+    </task>
+    <task id="LOCAL-00009" summary="单链表">
+      <created>1625457084234</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625457084234</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Java基础2">
+      <created>1625469965222</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1625469965222</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Java基础">
+      <created>1632655953164</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1632655953164</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Java基础">
+      <created>1634348683734</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634348683734</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test01_test02 - 2022.04.14 at 14h 46m 37s.xml">
+      <configuration name="Test01.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test01_test02 - 2022.04.14 at 14h 49m 35s.xml">
+      <configuration name="Test01.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test05_test02 - 2022.04.14 at 14h 51m 15s.xml">
+      <configuration name="Test05.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TreeMapTest_test2 - 2022.04.19 at 21h 42m 20s.xml">
+      <configuration name="TreeMapTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TreeMapTest_test2 - 2022.04.19 at 21h 44m 35s.xml">
+      <configuration name="TreeMapTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TreeMapTest_test1 - 2022.04.19 at 21h 44m 56s.xml">
+      <configuration name="TreeMapTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TreeMapTest_test2 - 2022.04.19 at 21h 55m 06s.xml">
+      <configuration name="TreeMapTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionsTest_test1 - 2022.04.19 at 21h 58m 12s.xml">
+      <configuration name="CollectionsTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionsTest_test1 - 2022.04.19 at 21h 58m 31s.xml">
+      <configuration name="CollectionsTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListTest_test - 2022.04.19 at 21h 59m 20s.xml">
+      <configuration name="ListTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1184105000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.14662756" side_tool="true" weight="0.24396783" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.85337245" visible="true" weight="0.20308311" />
+      <window_info id="Structure" order="6" sideWeight="0.7414722" side_tool="true" weight="0.20040214" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3548387" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.45454547" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5013405" side_tool="true" weight="0.23020528" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.37537092" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.34750733" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32844576" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49865952" weight="0.28005865" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32991204" />
+      <window_info anchor="bottom" id="Problems" order="13" side_tool="true" weight="0.3288889" />
+      <window_info anchor="bottom" id="Sequence" order="14" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.1085044" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32952693" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="1" side_tool="true" weight="0.3297587" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32957748" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.17761394" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.35120642" />
+      <window_info anchor="right" id="Codota" order="11" weight="0.3297587" />
+      <window_info anchor="right" x="93" y="93" width="1350" height="638" id="DSM" order="12" type="FLOATING" />
+      <window_info anchor="right" id="Module Dependencies" order="13" weight="0.1380697" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.14662756" side_tool="true" weight="0.24396783" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.85337245" visible="true" weight="0.18230563" />
+      <window_info id="Structure" order="6" sideWeight="0.7414722" side_tool="true" weight="0.20040214" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3548387" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.45454547" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5013405" side_tool="true" weight="0.23020528" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.37537092" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.20234604" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32844576" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49865952" visible="true" weight="0.09090909" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32991204" />
+      <window_info anchor="bottom" id="Problems" order="13" side_tool="true" weight="0.3288889" />
+      <window_info anchor="bottom" id="Sequence" order="14" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.1085044" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32952693" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="1" side_tool="true" weight="0.3297587" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32957748" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.17761394" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" visible="true" weight="0.15281501" />
+      <window_info anchor="right" id="Codota" order="11" weight="0.3297587" />
+      <window_info anchor="right" x="93" y="93" width="1350" height="638" id="DSM" order="12" type="FLOATING" />
+      <window_info anchor="right" id="Module Dependencies" order="13" weight="0.1380697" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/day06" />
+    </ignored-roots>
+    <MESSAGE value="java基础练习" />
+    <MESSAGE value="测试IDEA项目到gitee" />
+    <MESSAGE value="java基础io流和反射" />
+    <MESSAGE value="动态代理" />
+    <MESSAGE value="单链表" />
+    <MESSAGE value="Java基础2" />
+    <MESSAGE value="Java基础" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java基础" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Test/src/com/test/tryDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#455#456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/com/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/com/test/Main01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/com/test/Solution01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/com/test/T.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/com/test/Test05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/RunnableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/FutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2121">
+          <caret line="490" column="11" selection-start-line="490" selection-start-column="11" selection-end-line="490" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#16379#16380#0" expanded="true" />
+            <element signature="e#16443#16444#0" expanded="true" />
+            <element signature="e#17063#17064#0" expanded="true" />
+            <element signature="e#17129#17130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-732">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/ThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/WindowsTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="69" column="14" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/thread/ThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3090">
+          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8400">
+          <caret line="321" column="47" selection-start-line="321" selection-start-column="47" selection-end-line="321" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/AbstractExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3060">
+          <caret line="135" column="9" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/PropertiesrTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="110" column="28" lean-forward="true" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/proxy/StaticProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/strategy.cld">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/策略模式.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/WildDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/ToyDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/proxy/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/improve/WildDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/PeckingDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoF23/src/com/hbb/strategy/Duck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewCachedThreadPoolTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewScheduledThreadPoolTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewSingleThreadExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/src/com/aiguigu/threadPool/NewFixedThreadPoolTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/TreeMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="66" column="52" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/CollectionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="40" column="66" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/MapExer1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/MapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4980">
+          <caret line="171" column="35" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/src/com/atguigu/map/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2970">
+          <caret line="132" column="27" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
+          <folding>
+            <element signature="e#4172#4173#0" expanded="true" />
+            <element signature="e#4218#4219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-15.0.2/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131610">
+          <caret line="4490" column="22" selection-start-line="4490" selection-start-column="22" selection-end-line="4490" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/src/com/atguigu/listtest/ListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2762">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>15</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>day08</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>15</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

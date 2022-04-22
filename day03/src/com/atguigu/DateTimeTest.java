@@ -53,12 +53,14 @@ public class DateTimeTest {
 
         //*************按照指定的方式格式化解析：调用带参的构造器*************
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        String format1 = sdf1.format(date);
+        String format1 = sdf1.format(date).substring(0,10);
         System.out.println(format1);//2021-06-02 04:52:49
 
+/*
         //解析:要求字符串必须符合该构造器能识别的格式
         Date sdf2 = sdf1.parse("2021-06-02 04:52:49");
         System.out.println(sdf2);
+*/
 
 
     }

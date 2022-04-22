@@ -13,17 +13,13 @@ public class Season1Test1 {
         Season1 summer = Season1.SUMMER;
         System.out.println(summer);
 
-
         //values();
         Season1[] values = Season1.values();
         for (int i = 0; i < values.length; i++)
         {
             System.out.println(values[i]);
             values[i].show();
-
         }
-
-
         //valueOf(String objName);返回你要找的对象，如果没有你要找的对象，则抛异常
         Season1 winter =  Season1.valueOf("WINTER");
         System.out.println(winter);
@@ -34,6 +30,8 @@ interface info{
     void show();
 }
 enum Season1 implements info{
+
+
 
     //3.提供当前枚举类的对象，多个对象之间用","隔开
     SPRING("春天", "春暖花开"){
@@ -64,10 +62,9 @@ enum Season1 implements info{
 
     //1.私有化类的构造器,并给我们对象属性赋值
     private Season1(String season1Name, String season1Desc) {
+        System.out.println("你好");
         this.season1Name = season1Name;
         this.season1Desc = season1Desc;
-
-
     }
 
 
@@ -86,11 +83,11 @@ enum Season1 implements info{
     //提供toString()方法
 
 
-//    @Override
-//    public String toString() {
-//        return "Season{" +
-//                "season1Name='" + season1Name + '\'' +
-//                ", season1Desc='" + season1Desc + '\'' +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "Season{" +
+                "season1Name='" + season1Name + '\'' +
+                ", season1Desc='" + season1Desc + '\'' +
+                '}';
+    }
 }

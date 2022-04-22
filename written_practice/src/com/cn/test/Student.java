@@ -8,13 +8,32 @@ package com.cn.test;
  */
 public class Student extends Person{
 
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public Student() {
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     void eat() {
 
     }
 
-    public void test(){
+    public Student test(){
         System.out.println("你好");
+        return null;
     }
 
 

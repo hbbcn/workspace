@@ -72,7 +72,7 @@ import java.util.function.BiConsumer;
  *
  *  HashMap线程不安全：
  *          ①  2个线程执行put操作： 线程1 put()时，记录了头结点为node1，这时时间片用完，线程2 put()，且把数据插在了链表的头部，
- *          完成put操作。线程1接着完成put()剩余的操作，这时新的头结点已经变了，但是线程1记录的旧的头结点，把数据插入到头结点，
+ *          完成put操作。线程1接着完成put()剩余的操作，这时新的头结a点已经变了，但是线程1记录的旧的头结点，把数据插入到头结点，
  *          覆盖了线程2put的数据，导致线程不安全
  *          ② A线程执行get获取数据
  *               modelHashMap.get("1")
@@ -115,11 +115,11 @@ import java.util.function.BiConsumer;
  *                  #2.LinkedHashMap底层数据结构为双向链表，可以看成是LinkedList+HashMap。
  *
  *                  #3.如果accessOrder为false，则可以按插入元素的顺序遍历元素，如果accessOrder为true，则可以按访问顺序遍历元素
- *
+ *e
  *      五、ConcurrentHashMap
  *             ConcurrentHashMap是HashMap的线程安全版本，内部使用了数组+链表+红黑树的结构来存储数据，相对于同样线程安全的Hashtable来说，
- *  *             它在效率方面有很大的提升，因此多线程环境下更多的是使用ConcurrentHashMap，因此有必要对其原理进行分析。
- *  *             ConcurrentHashMap是HashMap的线程安全版本，底层数据结构为数组+链表+红黑树，默认容量16，线程同步，不允许[key,value]为null
+ *  *          它在效率方面有很大的提升，因此多线程环境下更多的是使用ConcurrentHashMap，因此有必要对其原理进行分析。
+ *  *          ConcurrentHashMap是HashMap的线程安全版本，底层数据结构为数组+链表+红黑树，默认容量16，线程同步，不允许[key,value]为null
  *  *     五、Map中定义的方法
  *  *
  *
@@ -146,14 +146,19 @@ public class MapTest {
     @Test
     public void test4() {
 
+        char[] chars = new char[]{3,4};
+        char[] c = {'3'};
         Map<Object,Object> map = new HashMap();
         map.put("AA", 123);
         map.put(45, 1234);
         map.put("BB", 56);
         map.put("AA", 34);
+        System.out.println("map中的元素个数" + map.size());
+
 
         for (Map.Entry entry : map.entrySet()){
 
+            System.out.println("遍历每一条数据" + entry);
         }
 
         //遍历所有的key集：keySet()
@@ -186,7 +191,6 @@ public class MapTest {
 
             // System.out.println(iterator1.next());
             Object obj = iterator1.next();
-
             Map.Entry entry = (Map.Entry) obj;
             System.out.println(entry.getKey() + "---->" + entry.getValue());
         }

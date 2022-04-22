@@ -49,19 +49,18 @@ public class IteratorTest{
 //          }
 
             //方式三：推荐  hasNext()判断是否还有下一个元素 //next()①指针下移
-            while (iterator.hasNext()) {
+   /*         while (iterator.hasNext()) {
                 System.out.println(iterator.next());
-            }
-
+            }*/
             //错误方式一
-//            while (coll.iterator().hasNext()){
-//                System.out.println(coll.iterator().next());
-//            }
+        /*    while (coll.iterator().hasNext()){
+                System.out.println(coll.iterator().next());
+            }*/
             //错误方式二
-//            Iterator iterator1 = coll.iterator();
-//            while(iterator1.hasNext() != null){
-//                System.out.println(iterator1.next());
-//            }
+        /*    Iterator iterator1 = coll.iterator();
+            while(iterator1.hasNext() != null){
+                System.out.println(iterator1.next());
+            }*/
         }
 
             //测试Iterator中的remove()
