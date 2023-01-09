@@ -103,5 +103,15 @@ public class SetTest{
             System.out.println(iterator.next());
         }
     }
+
+    @Test
+    public void Test3(){
+        Set s=new HashSet();
+        s.add("abc");
+        s.add("abc");
+        s.add("abcd");
+        s.add("ABC");
+        System.out.println(s.size());
+    }
 }
 

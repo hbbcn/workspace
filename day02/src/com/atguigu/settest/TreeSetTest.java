@@ -54,9 +54,6 @@ public class TreeSetTest{
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
-
-
-
     }
 
     @Test
@@ -68,18 +65,13 @@ public class TreeSetTest{
                if(o1 instanceof Person && o2 instanceof Person){
                    Person p1 = (Person)o1;
                    Person p2 = (Person)o2;
-
 //                   return Integer.compare(p1.getAge(),p2.getAge());
-
                    return p1.getName().compareTo(p2.getName());
                }else{
                    throw new RuntimeException("数据错误");
                }
             }
-
         };
-
-
         TreeSet set = new TreeSet(com);
         set.add(new Person("Tom",12));
         set.add(new Person("Jerry",32));
@@ -88,14 +80,11 @@ public class TreeSetTest{
         set.add(new Person("Zack",56));
         set.add(new Person("Zack",57));
         set.add(new Person("Zack",53));
-
         Iterator iterator = set.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
-
     }
-
 }
 
 

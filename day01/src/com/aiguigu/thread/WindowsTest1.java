@@ -14,7 +14,7 @@ package com.aiguigu.thread;
  * }
  * 1. 说明：操作共享数据的代码，即为需要被同步的代码
  * 2. 共享数据，多个线程共同操作变量。比如：static。
- * 3.同步监视器，俗称：锁。任何一个类的对象，都可以充当锁
+ * 3. 同步监视器，俗称：锁。任何一个类的对象，都可以充当锁
  * 要求：多个线程必须要共同一把锁
  * <p>
  * <p>
@@ -50,30 +50,23 @@ class Windows implements Runnable {
                 } else {
                     break;
                 }
-
             }
         }
     }
 }
 
 public class WindowsTest1 {
-
     public static void main(String[] args) {
             Windows w1 = new Windows();
-
-            Thread t1 = new Thread(w1);
-            t1.setName("窗口1");
+         /*   Thread t1 = new Thread(w1);
+            t1.setName("窗口1");*/
             Thread t2 = new Thread(w1);
             t2.setName("窗口2");
             Thread t3 = new Thread(w1);
             t3.setName("窗口3");
-            t1.start();
+//            t1.start();
             t2.start();
             t3.start();
-
-
-
-
     }
 }
 

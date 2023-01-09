@@ -25,11 +25,12 @@ class MyThread extends Thread{
         //重写Thread类的run()
     private static int i = 0;
     @Override
-    public  void run() {
+    public void run() {
         for ( int i = 0; i < 100; i++) {
             if (i % 2 == 0){
 //                System.out.println(i);
                 System.out.println(Thread.currentThread().getName() + " " +i);
+
             }
         }
     }

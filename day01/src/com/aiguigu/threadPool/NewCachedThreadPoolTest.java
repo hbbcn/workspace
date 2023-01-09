@@ -23,14 +23,16 @@ public class NewCachedThreadPoolTest {
             final int index = i;
             try {
                 Thread.sleep(10);
+                cachedThreadPool.execute(new Runnable() {
+                    public void run() {
+                        System.out.println(index);
+                    }
+                });
             } catch (InterruptedException e) {
                 e.printStackTrace();
+            }finally {
+                cachedThreadPool.shutdown();
             }
-            cachedThreadPool.execute(new Runnable() {
-                public void run() {
-                    System.out.println(index);
-                }
-            });
         }
     }
 }

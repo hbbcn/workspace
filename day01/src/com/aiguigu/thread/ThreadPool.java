@@ -74,7 +74,6 @@ public class ThreadPool {
         service.execute(new NumberThread2());//适合使用于Runnable
 //         service.submit();//适合适用于Callable
         service.shutdown();
-
     }
 }
 

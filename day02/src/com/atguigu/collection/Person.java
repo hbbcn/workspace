@@ -53,13 +53,10 @@ public class Person implements Comparable {
         return Objects.hash(name, age);
     }
 
-
    //按照姓名从大到下排列，年龄从小到大排列
     @Override
     public int compareTo(Object o) {
-
         if (o instanceof Person){
-
             Person p = (Person)o;
            // return -this.name.compareTo(p.name);
             int compare = -this.name.compareTo(p.name);
@@ -68,7 +65,6 @@ public class Person implements Comparable {
             }else{
                 return Integer.compare(this.age,p.age);
             }
-
         }else
         {
             throw new RuntimeException("输入类型不匹配");

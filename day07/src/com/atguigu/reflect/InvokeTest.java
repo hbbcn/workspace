@@ -16,6 +16,7 @@ public class InvokeTest {
     @Test
     public void test01() throws Exception {
         Class clazz = Class.forName("com.atguigu.reflect.Person");
+        System.out.println("clazz:" +  clazz);
         Object o = clazz.newInstance();
 
         Method test = clazz.getDeclaredMethod("test");

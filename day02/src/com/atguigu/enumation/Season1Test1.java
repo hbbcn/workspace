@@ -24,6 +24,9 @@ public class Season1Test1 {
         Season1 winter =  Season1.valueOf("WINTER");
         System.out.println(winter);
 
+        System.out.println(Season1.SUMMER);
+
+
     }
 }
 interface info{

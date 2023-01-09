@@ -25,6 +25,14 @@ public class niming {
             }
         }.test2();
 
+        AA aa = new AA() {
+            @Override
+            void test2() {
+
+            }
+        };
+
+
 
 
         DD d = new DD();

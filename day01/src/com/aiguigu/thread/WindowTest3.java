@@ -25,13 +25,16 @@ public class WindowTest3{
 }
 class Window3 extends Thread {
     private static int ticket = 100;
-
     static Object obj = new Object();
-
     @Override
     public void run() {
         while (true) {
+            if (ticket > 0){
                 show();
+            }else {
+                break;
+            }
+
         }
     }
 

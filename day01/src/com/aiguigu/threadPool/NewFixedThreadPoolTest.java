@@ -26,6 +26,8 @@ public class NewFixedThreadPoolTest {
                             Thread.sleep(10);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
+                        }finally {
+                            fixedThreadPool.shutdown();
                         }
                     }
                 });

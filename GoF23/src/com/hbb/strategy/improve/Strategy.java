@@ -16,7 +16,6 @@ public class Strategy {
         //数组
         Integer[] data = {9, 1, 5, 8, 3, 4};
         //实现升序，返回-1方左边，1放右边，0保持不变
-
         //说明
         //1.实现Comparator接口(策略接口)，匿名类对象new Comparator<Integer>(){..}
         //2.对象new Comparator<Integer>(){..} 实现策略接口的对象
@@ -30,7 +29,6 @@ public class Strategy {
                     return -1;
                 }
             }
-
         };
 
         //说明

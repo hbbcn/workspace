@@ -2,7 +2,9 @@ package com.atguigu.java8;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 /**
  *@ClassName LamdbaTest
@@ -48,7 +50,7 @@ public class LambdaTest {
 
 
     @Test
-    public void test2(){
+    public void test2() {
 
    /*     Comparator<Integer> comparator = new Comparator<>(){
             @Override
@@ -62,19 +64,28 @@ public class LambdaTest {
 
         System.out.println("***********");
 
-        Comparator<Integer> com2 = (o3,o4)->Integer.compare(o3,o4);
-        System.out.println(com2.compare(12,21));
-    }
+        Comparator<Integer> com2 = (o3, o4) -> Integer.compare(o3, o4);
+        System.out.println(com2.compare(12, 21));
 
+        //方法引用
+        Comparator<Integer> com3 = Integer :: compare;
+        int compare = com3.compare(32, 21);
+        System.out.println(compare);
+
+
+
+    }
     @Test
     public void test3(){
-        Human human = new Human() {
-            @Override
-            public void eat() {
-            }
-            public void sleep() {
-            }
-        };
+//        Human human = new Human() {
+//            @Override
+//            public void eat() {
+//            }
+//            public void sleep() {
+//            }
+//        };
+
+
 
         Human h = ()->{
             System.out.println("吃");
@@ -83,5 +94,17 @@ public class LambdaTest {
         h.eat();
     }
 
+    @Test
+    public void test4(){
+        ArrayList list = new ArrayList();
+//        list.remove("AA");
+        list.add(123);
+        list.add(456);
+        list.add("AA");
+
+        list.forEach(System.out :: println);
+
+
+    }
 }
 

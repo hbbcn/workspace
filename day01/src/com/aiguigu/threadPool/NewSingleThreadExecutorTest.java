@@ -23,12 +23,14 @@ public class NewSingleThreadExecutorTest{
             final int index = i;
             singleThreadExecutor.execute(new Runnable() {
                 public void run() {
-                    /*                  System.out.println(index);*/
+                    /* System.out.println(index);*/
                     try {
                         System.out.println(index);
-                        Thread.sleep(2000);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
+                    }finally {
+                        singleThreadExecutor.shutdown();
                     }
                 }
             });

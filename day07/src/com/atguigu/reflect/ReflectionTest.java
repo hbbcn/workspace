@@ -92,11 +92,11 @@ public class ReflectionTest{
 
         System.out.println(obj.toString());
 
-        //调用方法
+        //调用方法的invoke():参数1：方法的调用者 参数二：给方法形参赋值的形参
         System.out.println("****************");
         Method show = clazz.getDeclaredMethod("show");
-        show.invoke(obj);
-
+        Object invoke = show.invoke(obj);
+        System.out.println("invoke:" + invoke);
 
 
         //通过反射，可以调用Person类的私有的结构。比如：私有的构造器、方法、属性
@@ -123,7 +123,7 @@ public class ReflectionTest{
 
     //获取Class的实例的方式
     @Test
-    public void test3() throws ClassNotFoundException {
+    public void test3() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         //方式一: 调用运行时类的属性： .class
         Class clazz1 = Person.class;
         System.out.println(clazz1);
@@ -158,10 +158,12 @@ public class ReflectionTest{
         ClassLoader classLoader = ReflectionTest.class.getClassLoader();
         Class clazz4 = classLoader.loadClass("com.atguigu.reflect.Person");
         System.out.println(clazz4);
+        System.out.println(clazz4.newInstance());
 
         System.out.println(clazz4 == clazz1);
 
-
+        Class clazz = Class.forName("java.lang.Object");
+        System.out.println("dsfsd" + clazz);
 
 
     }

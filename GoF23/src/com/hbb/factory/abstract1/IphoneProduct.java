@@ -7,6 +7,4 @@ public interface IphoneProduct {
     void shutDown();
     void callup();
     void sendMS();
-
-
 }
