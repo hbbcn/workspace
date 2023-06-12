@@ -7,7 +7,9 @@ package com.atguigu.reflect;
  *@Version 1.0
  */
 public class Person{
-
+    public static void main(String[] args) {
+        ClassLoader classLoader = Person.class.getClassLoader();
+    }
     private String name;
     public  int age;
 

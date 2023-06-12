@@ -13,6 +13,7 @@ import javax.xml.transform.Source;
 import java.io.PrintStream;
 import java.lang.reflect.Constructor;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 /**
  * Lambda表达式的使用
@@ -31,10 +32,27 @@ import java.util.function.Consumer;
  */
 public class LambdaTest01{
 
+    public static void main(String[] args) {
+        convert("1111", s -> Integer.parseInt(s));
+
+    }
+
+    private static void convert(String s, Function<String,Integer> f){
+        Integer apply = f.apply(s);
+        System.out.println(apply);
+    }
+
     @Test
     public void test01(){
 
         happyTime(400,money-> System.out.println(money));
+        happyTime(400, new Consumer<Double>() {
+            @Override
+            public void accept(Double aDouble) {
+                System.out.println(aDouble);
+            }
+        });
+
     }
 
     public void happyTime(double money, Consumer<Double> con){
@@ -50,6 +68,14 @@ public class LambdaTest01{
      */
     @Test
     public void test02(){
+        Consumer<String> consumer = new Consumer<String>() {
+            @Override
+            public void accept(String o) {
+            }
+        };
+        consumer.accept("11111");
+
+
         Consumer<String> con2 = str -> System.out.println(str);
         con2.accept("北京");
 

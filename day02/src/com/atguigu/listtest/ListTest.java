@@ -113,13 +113,16 @@ public class ListTest{
     @Test
     public void test1(){
         ArrayList list = new ArrayList();
-        list.remove("AA");
+
         list.add(123);
         list.add(456);
         list.add("AA");
         list.add(new Person("Tom",12));
         list.add(456);
         list.add(null);
+        list.add(0,list.remove(2));
+        list.remove(0);
+//        list.remove("AA");
         //错误删除
      /*   for (Object obj : list) {
             System.out.println(obj);
@@ -129,6 +132,13 @@ public class ListTest{
             it.next();
             it.remove();
         }*/
+        System.out.println(list);
+        List list1=  Arrays.asList(1,2,3);
+        String s = String.valueOf("list:" + list1);
+        System.out.println(s);
+        String[] arrar = new String[]{"fas", "dfs","ddd"};
+
+        list.addAll(list1);
         System.out.println(list);
        /* System.out.println(list);
 
@@ -160,6 +170,7 @@ public class ListTest{
         list.add("AA");
         list.add(new Person("Tom",12));
         list.add(456);
+
 
 
         System.out.println(list);

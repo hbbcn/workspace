@@ -6,6 +6,7 @@ import javax.sound.midi.Soundbank;
 import java.security.KeyStore;
 import java.util.*;
 import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 
 /**
  *@ClassName MapTest
@@ -157,6 +158,7 @@ public class MapTest {
         System.out.println(map);
 
 
+
         for (Map.Entry entry : map.entrySet()){
 
             System.out.println("遍历每一条数据" + entry);
@@ -200,12 +202,10 @@ public class MapTest {
         Set keySet = map.keySet();
         Iterator iterator2 = keySet.iterator();
         while (iterator2.hasNext()) {
-            Object key = iterator2.next();
-            Object value = map.get(key);
-            System.out.println(key + "===" + value);
+            Object ke = iterator2.next();
+            Object value = map.get(ke);
+            System.out.println(ke + "===" + value);
         }
-
-
 
     }
 
@@ -274,6 +274,21 @@ public class MapTest {
         Map map = new HashMap();
         //map = new Hashtable();
         map.put(null, null);
+
+    }
+
+
+}
+
+class Fun{
+    public static void main(String[] args) {
+        fun01(d->{
+            System.out.println(d);
+        });
+    }
+
+    public static void fun01(Consumer<Double> consumer){
+        consumer.accept(1.1d);
     }
 
 

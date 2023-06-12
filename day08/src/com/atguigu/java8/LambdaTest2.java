@@ -48,7 +48,7 @@ public class LambdaTest2 {
         System.out.println("+++++++++++++++++++++++++");
 
         //Lambda表达式写法
-        happyTime(20,money -> System.out.println("熬夜太累了，吃口麻辣烫，价格为：" + money));
+        happyTime(20,mone -> System.out.println("熬夜太累了，吃口麻辣烫，价格为：" + mone));
     }
 
     //根据给定的规则，过滤集合中的字符串。此规则由Predicate的方法决定

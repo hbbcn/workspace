@@ -132,6 +132,8 @@ public class ReflectionTest{
         Person p1 = new Person();
         Class clazz2 = p1.getClass();
         System.out.println(clazz2);
+        Class<? extends Class> aClass2 = clazz2.getClass();
+        System.out.println(" aclass2" +aClass2);
         Class superclass = clazz2.getSuperclass();
         System.out.println(superclass);
         Class<? extends Class> aClass1 = clazz2.getClass().getClass();

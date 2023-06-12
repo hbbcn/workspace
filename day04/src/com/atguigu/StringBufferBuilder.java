@@ -3,6 +3,9 @@ package com.atguigu;
 import org.junit.Test;
 
 import java.lang.ref.SoftReference;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  *@ClassName StringBufferBuilder
@@ -32,6 +35,26 @@ public class StringBufferBuilder{
     @Test
     public void test2(){
 
+        List<String> list = new ArrayList<String>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("d");
+
+        StringBuilder sb= new StringBuilder();
+        sb.append(2).append(3);
+        System.out.println(sb.toString());
+        for (int i = 0; i < list.size(); i++) {
+            sb.append(list.get(i));
+        }
+        System.out.println(list);
+        String join = String.join(",", list);
+        System.out.println("join: " + join);
+        System.out.println("method 1: " + sb.toString());
+
+        String st = "1,2,3,4,5";
+        st.trim();
+        System.out.println(st);
         StringBuffer s1 =new StringBuffer("abc");
         s1.append(1);//在结尾加个int类型的1
         StringBuffer buffer = s1.append('1');//在结尾加个字符‘1’；
@@ -106,5 +129,19 @@ public class StringBufferBuilder{
 
 
         }
+
+        @Test
+    public void testString(){
+            String i = "1";
+            int i1 = Integer.parseInt(i);
+            Integer i2 = new Integer("i");
+            String s = i2.toString();
+            String s1 = Integer.toString(i2);
+            Integer integer = Integer.valueOf(i);
+            String s2 = String.valueOf(i1);
+
+
+        }
+
 }
 

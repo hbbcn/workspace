@@ -18,7 +18,7 @@ public class Test{
         @Override
         public int compare(Employees o1, Employees o2) {
             if (o1.name.compareTo(o2.name) == 0){
-                return Integer.compare(o1.id,o2.id);
+                return Integer.compare(o1.id,o2.id) ;
 //                return o1.id - o2.id;
 
             }else {

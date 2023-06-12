@@ -106,12 +106,31 @@ public class SetTest{
 
     @Test
     public void Test3(){
-        Set s=new HashSet();
-        s.add("abc");
-        s.add("abc");
-        s.add("abcd");
-        s.add("ABC");
-        System.out.println(s.size());
+        Set list1=new HashSet<>();
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        Set list2=new HashSet<>();
+        list2.add(2);
+        list2.add(3);
+        list2.add(4);
+
+//        例1：
+        list1.retainAll(list2);
+        System.out.println(list1);   //[2, 3] 即为两个集合交集
+
+//        例2：
+        list1.addAll(list2);
+        System.out.println(list1);   //[1, 2, 3, 4] 即为两个集合并集
+
+//        例3：
+        list1.removeAll(list2);
+        System.out.println(list1);   //[1] 即为集合list1的差集
+
+//        例4：
+        list2.removeAll(list1);
+        System.out.println(list2);   //[4] 即为集合list2的差集
+
     }
 }
 

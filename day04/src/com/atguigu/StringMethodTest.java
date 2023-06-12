@@ -3,6 +3,9 @@ package com.atguigu;
 import org.junit.Test;
 
 import java.net.SocketTimeoutException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
 
 /**
  *@ClassName StringMethodTest
@@ -27,6 +30,8 @@ public class StringMethodTest{
         String s1 = null;
         System.out.println(s + s1);
 
+        List<Long> list= new ArrayList<>();
+      list.stream();
 
 
         String str3 = str1.replace("北京","上海");
