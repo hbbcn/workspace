@@ -112,6 +112,8 @@ public class ListTest{
 
     @Test
     public void test1(){
+
+
         ArrayList list = new ArrayList();
 
         list.add(123);

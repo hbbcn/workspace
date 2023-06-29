@@ -38,8 +38,16 @@ import java.util.Set;
  *                                      在运行时判断任意一个类所具有的成员变量和方法。
  *                                      在运行时调用任意一个对象的方法。
  *
-
  *
+ *    1、getFields：获取当前类或父类或父接口的 public修饰的字段。
+ *    2、getDeclaredFields：获取当前类的所有字段，包括 protected/默认/private 修饰的字段；不包括父类public 修饰的字段。
+ ***
+  *
+ */
+
+
+
+ /*
  *@Author HuangQingbin
  *@Date 2021/6/27 14:26
  *@Version 1.0
@@ -71,8 +79,9 @@ public class ReflectionTest{
         //1.通过反射，创建Person类的对象
 //        Object o = clazz.newInstance(); //调用Person空参构造器实例化Person类
         System.out.println(clazz + "-----");
+        Person o = (Person) clazz.newInstance();
         Class<? extends Class> aClass = clazz.getClass();
-        System.out.println(aClass);
+//        System.out.println(aClass);
 
         Constructor cons = clazz.getConstructor(String.class,int.class);
 
@@ -88,7 +97,11 @@ public class ReflectionTest{
         Field name1 = clazz.getDeclaredField("name");
         name1.setAccessible(true);
         name1.set(obj,"huge");
+        String s1 = name1.get(obj).toString();
+        System.out.println("name2 :" + s1);
 
+        System.out.println( "Fields:" + clazz.getFields().length);
+        System.out.println( "DeclaredFields:" + clazz.getDeclaredFields().toString());
 
         System.out.println(obj.toString());
 
@@ -96,7 +109,7 @@ public class ReflectionTest{
         System.out.println("****************");
         Method show = clazz.getDeclaredMethod("show");
         Object invoke = show.invoke(obj);
-        System.out.println("invoke:" + invoke);
+//        System.out.println("invoke:" + invoke);
 
 
         //通过反射，可以调用Person类的私有的结构。比如：私有的构造器、方法、属性

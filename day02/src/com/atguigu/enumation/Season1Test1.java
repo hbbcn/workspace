@@ -73,6 +73,8 @@ enum Season1 implements info{
 
 
 
+
+
     //4.其他诉求：获取枚举类对象的属性
 
 
