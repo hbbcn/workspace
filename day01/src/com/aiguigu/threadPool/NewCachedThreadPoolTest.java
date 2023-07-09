@@ -27,8 +27,10 @@ public class NewCachedThreadPoolTest {
                 e.printStackTrace();
             }
             cachedThreadPool.execute(new Runnable() {
+                @Override
                 public void run() {
                     System.out.println(index);
+                    System.out.println(Thread.currentThread().getName());
                 }
             });
         }

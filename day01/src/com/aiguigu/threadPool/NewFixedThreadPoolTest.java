@@ -23,6 +23,7 @@ public class NewFixedThreadPoolTest {
                     public void run() {
                         try {
                             System.out.println(index);
+                            System.out.println(Thread.currentThread().getName());
                             Thread.sleep(10);
                         } catch (InterruptedException e) {
                             e.printStackTrace();

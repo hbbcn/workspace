@@ -9,7 +9,7 @@ package com.aiguigu.thread;
  */
 
 class Window extends Thread {
-    private static int ticket = 100;
+    private  int ticket = 10;
 
     static Object obj = new Object();//类锁
 
