@@ -42,8 +42,8 @@ public class InputStreamReaderTest{
         int len;
         while((len = isr.read(cbuf)) != -1 ){
             String str = new String(cbuf, 0, len);
-//            System.out.print(cbuf); 输出结果不对
-            System.out.print(str);
+            System.out.print(cbuf); //输出结果不对
+//            System.out.print(str);
         }
         isr.close();
     }
@@ -75,6 +75,24 @@ public class InputStreamReaderTest{
         isr.close();
         osw.close();
 
+    }
+
+    @Test
+    public void test3() throws IOException {
+
+
+//
+//        FileOutputStream isr = new FileOutputStream("hello.txt");
+//        //InputStreamReader isr = new InputStreamReader(fis);//使用系统默认的字符集
+////        InputStreamReader isr = new InputStreamReader(fis, "utf-8");
+//        char[] cbuf = new char[5];
+//        int len;
+//        while((len = isr.Write(cbuf)) != -1 ){
+//            String str = new String(cbuf, 0, len);
+////            System.out.print(cbuf); 输出结果不对
+//            System.out.print(str);
+//        }
+//        isr.close();
     }
 }
 

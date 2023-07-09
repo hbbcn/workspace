@@ -35,10 +35,8 @@ public class SingletonTest {
 }
 
 class Bank{
-	
 	//私有化的构造器
 	private Bank() {
-		
 	}
 	
 	//2.内部创建类的对象

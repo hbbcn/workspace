@@ -11,12 +11,13 @@ public class Enum {
 }
     enum AccountType
     {
-        SAVING, FIXED, CURRENT,AGE;
+        SAVING, FIXED, CURRENT,AGE,CODE;
         private AccountType()
         {
             System.out.println("It is a account type");
-        }
 
+            System.out.println("!!!!!!!!");
+        }
 
     }
     class EnumOne

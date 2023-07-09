@@ -7,22 +7,22 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 /**
- *@ClassName Exer
- *@Description  TODO
- *@Author HuangQingbin
- *@Date 2021/6/21 11:11
- *@Version 1.0
+ * @ClassName Exer
+ * @Description TODO
+ * @Author HuangQingbin
+ * @Date 2021/6/21 11:11
+ * @Version 1.0
  */
-public class Exer{
+public class Exer {
 
     @Test
-    public void test(){
+    public void test() {
 
-       Comparator com = new Comparator<Person>() {
-           @Override
-           public int compare(Person o1, Person o2) {
-               return o1.getName().compareTo(o2.getName());
-           }
+        Comparator com = new Comparator<Person>() {
+            @Override
+            public int compare(Person o1, Person o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
 
         };
 
@@ -32,17 +32,10 @@ public class Exer{
         set.add(new Person("Jarry", 22));
         set.add(new Person("Miacle", 45));
 
-        Iterator<Person> iterator =  set.iterator();
-        while(iterator.hasNext()){
+        Iterator<Person> iterator = set.iterator();
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
-
-
-
-
-
-
-
     }
 
 }

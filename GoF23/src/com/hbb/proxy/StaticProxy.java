@@ -6,7 +6,6 @@ package com.hbb.proxy;
  *@Author hqb
  *@Date 2022/3/21 13:43
  *@Version 1.0
- *
  *  静态代理的实现
  */
 public class StaticProxy{

@@ -27,7 +27,7 @@ public class FileInputOutputStreamTest{
             //造流
             fis = new FileInputStream(file);
             //3.读数据
-            byte[] buffer = new byte[30];
+            byte[] buffer = new byte[1];
             int len;//记录每次读取的字节个数
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             while((len = fis.read(buffer)) != -1){

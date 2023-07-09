@@ -43,7 +43,6 @@ public class WeatherData{
     public void dataChange(){
         currentConditions.update(this.temperature,getPressure(),getHumidity());
     }
-
     //
     public void setData(float temperature,float pressure,float humidity){
         this.temperature = temperature;

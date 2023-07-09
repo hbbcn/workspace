@@ -36,6 +36,8 @@ public class PersonTest {
 	//**************************************
 		//对象多态性
 		Person p2 = new Man();
+
+		Man p0 = (Man) p2;
 		
 		Person p4 = (Person)p2;//正确
 	
@@ -95,6 +97,7 @@ public class PersonTest {
 			{
 			Women w1 = (Women)p2;
 			w1.goShopping();
+			w1.eat();
 			System.out.println("*****Women******");
 		}//
 		

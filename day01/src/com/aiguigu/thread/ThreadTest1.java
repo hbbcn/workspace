@@ -30,13 +30,26 @@ public class ThreadTest1{
 
     public static void main(String[] args) {
         //创建实现类的对象
-        Mthread mthread = new Mthread();
-        //将此对象作为参数传递到Thread类的构造器中，创建Thread类的对象
-        Thread t1 = new Thread(mthread);
-        t1.start();
-
-        Thread t2 = new Thread(mthread);
-        t2.start();
+//        Mthread mthread = new Mthread();
+//        //将此对象作为参数传递到Thread类的构造器中，创建Thread类的对象
+//        Thread t1 = new Thread(mthread);
+//        t1.start();
+//
+//        Thread t2 = new Thread(mthread);
+//        t2.start();
+//
+        new Runnable(){
+            @Override
+            public void run() {
+                for (int i = 0; i < 100; i++) {
+                    if (i % 2 == 0){
+                        System.out.println(Thread.currentThread().getName()+" " + i);
+                    }
+                }
+            }
+        }.run();
     }
+
+
 }
 

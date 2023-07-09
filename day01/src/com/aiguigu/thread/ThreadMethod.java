@@ -85,7 +85,6 @@ class HelloThread extends Thread {
     public HelloThread(String name) {
         super(name);
 
-
     }
 
 }

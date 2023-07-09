@@ -68,8 +68,6 @@ public class LockTest {
         t1.start();
         t2.start();
         t3.start();
-
-
     }
 
     abstract class A implements Lock {

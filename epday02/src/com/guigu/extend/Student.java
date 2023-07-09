@@ -21,6 +21,7 @@ public class Student extends Person {
 
 	public Student(String name, int age, String major) {
 		super();
+		super.name = "dsf";
 		this.name = name;
 		setAge(age);
 		this.major = major;

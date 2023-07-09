@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
-public  class ThreadCallable{
+public class ThreadCallable{
            public static void main(String[] args) {
             //3.创建Callable接口实现类的对象
             NumThread numThread = new NumThread();
@@ -38,18 +38,17 @@ public  class ThreadCallable{
      *@Version 1.0
      */
     //1.创建一个实现Callable的实现类
-    static class NumThread implements Callable {
+    static class NumThread implements Callable<Integer> {
 
     //2.实现call方法，将此线程需要执行的操作声明在call()中
         @Override
-        public Object call() throws Exception {
+        public Integer call() throws Exception {
             int sum = 0;
             for (int i = 0; i <= 100; i++) {
                 if(i % 2 == 0){
                     System.out.println(i);
                     sum += i;
                 }
-
             }
             return  sum;
         }

@@ -29,13 +29,8 @@ public class ObjectOutPutStreamTest{
     //序列化
     public static void main(String[] args) throws Exception {
 
-
-
 //        SerializePerson();
-
         DeSerializePerson();
-
-
     }
 
 
@@ -56,10 +51,9 @@ public class ObjectOutPutStreamTest{
     private static void DeSerializePerson() throws Exception {
 
         ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("d://person.txt"));
-
         Object o = inputStream.readObject();
-
         System.out.println(o);
+        inputStream.close();
 
     }
 

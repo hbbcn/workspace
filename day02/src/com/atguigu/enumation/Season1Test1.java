@@ -24,6 +24,9 @@ public class Season1Test1 {
         Season1 winter =  Season1.valueOf("WINTER");
         System.out.println(winter);
 
+        System.out.println(Season1.SUMMER);
+
+
     }
 }
 interface info{
@@ -66,6 +69,8 @@ enum Season1 implements info{
         this.season1Name = season1Name;
         this.season1Desc = season1Desc;
     }
+
+
 
 
 

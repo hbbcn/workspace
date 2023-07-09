@@ -19,7 +19,5 @@ public class PeckingDuck extends Duck {
     public void display() {
         System.out.println("北京鸭");
     }
-
-
 }
 

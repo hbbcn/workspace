@@ -40,7 +40,6 @@ public class EnumationTest{
 
 
 class Season{
-
     //声明Season对象属性:private final 修饰
     private final String seasonName;
     private final String seansonDesc;

@@ -7,9 +7,12 @@ package com.atguigu.reflect;
  *@Version 1.0
  */
 public class Person{
-
+    public static void main(String[] args) {
+        ClassLoader classLoader = Person.class.getClassLoader();
+    }
     private String name;
     public  int age;
+    public  int age1;
 
     @Override
     public String toString() {
@@ -41,7 +44,7 @@ public class Person{
     }
 
     public void show(){
-        System.out.println("你好，我是一个人");
+        System.out.println("你好，我是一个人-------");
     }
     private String showNation(String nation){
         System.out.println("我的国籍是：" + nation);
