@@ -17,7 +17,7 @@ public class StaticProxy{
         Class<? extends Class> aClass1 = aClass.getClass();
         ClassLoader classLoader = personProxy.getClass().getClassLoader();
         System.out.println(aClass);
-
+        //编辑内容
         System.out.println(aClass1);
         System.out.println(classLoader);
     }
