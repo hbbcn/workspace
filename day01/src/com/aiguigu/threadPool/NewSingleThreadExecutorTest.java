@@ -22,6 +22,7 @@ public class NewSingleThreadExecutorTest{
         for (int i = 0; i < 10; i++) {
             final int index = i;
             singleThreadExecutor.execute(new Runnable() {
+                @Override
                 public void run() {
                     /* System.out.println(index);*/
                     try {

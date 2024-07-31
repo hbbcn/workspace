@@ -1,4 +1,4 @@
-package com.aiguigu.exer;
+package com.aiguigu.threadsafe;
 
 /**
  * @ClassName ProductTest
@@ -16,33 +16,34 @@ package com.aiguigu.exer;
 
 class Clerk {
     private int i = 0;
+
     public synchronized void producerProcduct() {
 
-            if (i < 20) {
-                i++;
-                System.out.println(Thread.currentThread().getName() + "开始生产第" + i + "产品");
-                notify();
-            } else {
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+        if (i < 20) {
+            i++;
+            System.out.println(Thread.currentThread().getName() + "开始生产第" + i + "产品");
+//            notify();
+        } else {
+//            try {
+//                wait();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+        }
     }
 
     public synchronized void consumerProducter() {
-            if(i > 0){
-                System.out.println(Thread.currentThread().getName() + "开始消费第" + i + "产品");
-                i--;
-                notify();
-            }else{
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+        if (i > 0) {
+            System.out.println(Thread.currentThread().getName() + "开始消费第" + i + "产品");
+            i--;
+//            notify();
+        } else {
+//            try {
+//                wait();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+        }
     }
 }
 
@@ -56,8 +57,8 @@ class Producer extends Thread {//生产者
 
     @Override
     public void run() {
-        System.out.println( getName() + "开始生产产品：");
-        while(true){
+        System.out.println(getName() + "开始生产产品：");
+        while (true) {
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
@@ -70,6 +71,7 @@ class Producer extends Thread {//生产者
 
 class Consumer extends Thread {//消费者
     private Clerk clerk;
+
     public Consumer(Clerk clerk) {
         this.clerk = clerk;
     }
@@ -77,7 +79,7 @@ class Consumer extends Thread {//消费者
     @Override
     public void run() {
         System.out.println("消费者开始消费产品：");
-        while(true){
+        while (true) {
             try {
                 Thread.sleep(15);
             } catch (InterruptedException e) {
