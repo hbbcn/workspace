@@ -16,14 +16,17 @@ public class NewFixedThreadPoolTest {
      * @param args
      */
     public static void main(String[] args) {
-            ExecutorService fixedThreadPool = Executors.newFixedThreadPool(10);
+            ExecutorService fixedThreadPool = Executors.newFixedThreadPool(5);
             for (int i = 0; i < 10; i++) {
                 final int index = i;
                 fixedThreadPool.execute(new Runnable() {
                     public void run() {
                         try {
+                            System.out.println("++++++++++++++++++++++++++");
+
                             System.out.println(index);
-                            Thread.sleep(10);
+                            System.out.println(Thread.currentThread().getName());
+                            Thread.sleep(1000);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }finally {

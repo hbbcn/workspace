@@ -1,4 +1,8 @@
 package com.atguigu.reflect;
+
+import java.util.Date;
+import java.util.List;
+
 /**
  *@ClassName Person
  *@Description  TODO
@@ -10,9 +14,13 @@ public class Person{
     public static void main(String[] args) {
         ClassLoader classLoader = Person.class.getClassLoader();
     }
-    private String name;
-    public  int age;
+    private String name = "huangqingb";
+    public  int age=11;
     public  int age1;
+    public Date date= new Date();
+    public Integer id=1111;
+    public Long account=124321L;
+    public List list;
 
     @Override
     public String toString() {

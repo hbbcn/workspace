@@ -115,6 +115,7 @@ public class ListTest{
 
 
         ArrayList list = new ArrayList();
+        ArrayList list2 = new ArrayList();
 
         list.add(123);
         list.add(456);
@@ -124,6 +125,9 @@ public class ListTest{
         list.add(null);
         list.add(0,list.remove(2));
         list.remove(0);
+        list.addAll(list2);
+//        list.addAll(null);
+
 //        list.remove("AA");
         //错误删除
      /*   for (Object obj : list) {

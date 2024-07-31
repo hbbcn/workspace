@@ -22,6 +22,7 @@ public class Demo {
            List<Object> objects = new ArrayList<>();
             fun(apples);
             fun(orange);
+            System.out.println(null+"");
 
         }
 

@@ -7,6 +7,8 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -52,11 +54,11 @@ import java.util.Set;
  *@Date 2021/6/27 14:26
  *@Version 1.0
  */
-public class ReflectionTest{
+public class ReflectionTest {
 
     //反射之前对于Person类的操作
     @Test
-    public void test1(){
+    public void test1() {
 
         //1.创建Person类的对象
         Person p1 = new Person("Tom", 12);
@@ -83,25 +85,25 @@ public class ReflectionTest{
         Class<? extends Class> aClass = clazz.getClass();
 //        System.out.println(aClass);
 
-        Constructor cons = clazz.getConstructor(String.class,int.class);
+        Constructor cons = clazz.getConstructor(String.class, int.class);
 
-        Person obj = (Person)cons.newInstance("Tom", 12);//调用带参的构造器实例化Person类
+        Person obj = (Person) cons.newInstance("Tom", 12);//调用带参的构造器实例化Person类
 //      Person obj = new Person();// 实例化2
-         System.out.println(obj.toString());
+        System.out.println(obj.toString());
 
         //通过反射，调用对象指定的属性、方法
         //调用属性
         Field age = clazz.getDeclaredField("age");
-        age.set(obj,10);
+        age.set(obj, 10);
         //调用私有属性
         Field name1 = clazz.getDeclaredField("name");
         name1.setAccessible(true);
-        name1.set(obj,"huge");
+        name1.set(obj, "huge");
         String s1 = name1.get(obj).toString();
         System.out.println("name2 :" + s1);
 
-        System.out.println( "Fields:" + clazz.getFields().length);
-        System.out.println( "DeclaredFields:" + clazz.getDeclaredFields().toString());
+        System.out.println("Fields:" + clazz.getFields().length);
+        System.out.println("DeclaredFields:" + clazz.getDeclaredFields().toString());
 
         System.out.println(obj.toString());
 
@@ -115,7 +117,7 @@ public class ReflectionTest{
         //通过反射，可以调用Person类的私有的结构。比如：私有的构造器、方法、属性
         Constructor cons1 = clazz.getDeclaredConstructor(String.class);
         cons1.setAccessible(true);
-        Person p1 = (Person)cons1.newInstance("Jerray");
+        Person p1 = (Person) cons1.newInstance("Jerray");
         System.out.println("***********");
         System.out.println(p1);
 
@@ -123,12 +125,12 @@ public class ReflectionTest{
         Field name = clazz.getDeclaredField("name");
         name.setAccessible(true);
         System.out.println("************8");
-        name.set(p1,"HanMeiMei");
+        name.set(p1, "HanMeiMei");
         System.out.println(p1);
         //调用私有的方法
         Method showNation = clazz.getDeclaredMethod("showNation", String.class);
         showNation.setAccessible(true);
-        String s = (String)showNation.invoke(p1,"中国");//相当于p1.showNation("中国")
+        String s = (String) showNation.invoke(p1, "中国");//相当于p1.showNation("中国")
         System.out.println(s);
 
 
@@ -146,7 +148,7 @@ public class ReflectionTest{
         Class clazz2 = p1.getClass();
         System.out.println(clazz2);
         Class<? extends Class> aClass2 = clazz2.getClass();
-        System.out.println(" aclass2" +aClass2);
+        System.out.println(" aclass2" + aClass2);
         Class superclass = clazz2.getSuperclass();
         System.out.println(superclass);
         Class<? extends Class> aClass1 = clazz2.getClass().getClass();
@@ -184,6 +186,47 @@ public class ReflectionTest{
     }
 
 
+    @Test
+    public void test05() throws IllegalAccessException {
+        Class clazz = Person.class;
+        Field[] declaredFields = clazz.getDeclaredFields();
+        List<Field> fields = Arrays.asList(declaredFields);
+        System.out.println(fields);
+        for (Field field : fields) {
+//            String name = field.getType().getName();
+//            System.out.println(name);
+//            int i = name.lastIndexOf(".");
+//            System.out.println(i);
+//            System.out.println(name.length());
+//            String substring = name.substring(i+1);
+//            System.out.println(substring);
+            field.setAccessible(true);
+            System.out.println(field.getType().getName());
+            System.out.println("!!!!!!!!!!!!!!!!!!!");
+            System.out.println(field.get(new Person()));
+
+            System.out.println(toHumpString("huangQingBin"));
+
+        }
+
+
+    }
+
+    //蛇形转驼峰形
+    public String toHumpString(String string) {
+
+        StringBuilder sb = new StringBuilder(string);
+
+        int temp = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (Character.isUpperCase(string.charAt(i))) {
+                sb.insert(i + temp, "_");
+                temp += 1;
+            }
+        }
+        return sb.toString().toLowerCase();
+
+    }
 
 }
 

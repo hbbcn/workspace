@@ -72,7 +72,7 @@ public class Person implements Comparable{
 
             Person p = (Person)o;
            // return -this.name.compareTo(p.name);
-            int compare = this.name.compareTo(p.name);
+            int compare = this. name.compareTo(p.name);
             if (compare != 0){
                 return compare;
             }else{

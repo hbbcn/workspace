@@ -23,6 +23,7 @@ public class NewCachedThreadPoolTest {
             final int index = i;
             try {
                 Thread.sleep(10);
+
                 cachedThreadPool.execute(new Runnable() {
                     public void run() {
                         System.out.println(index);
